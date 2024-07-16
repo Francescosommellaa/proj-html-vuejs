@@ -1,11 +1,13 @@
 <script>
+import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import { store } from './store';
 
 export default {
   name: 'App',
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter
   },
   data() {
     return {
@@ -16,8 +18,9 @@ export default {
 </script>
 
 <template>
-
+  <AppHeader/>
   <route-view></route-view>
+  <AppFooter/>
 </template>
 
 <style lang="scss">
