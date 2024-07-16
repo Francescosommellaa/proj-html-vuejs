@@ -4,6 +4,8 @@
 import AppCarosel from './components/AppCarosel.vue'
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
+import AppWorkingProcess from './components/AppWorkingProcess.vue';
+import AppWorkingProcess from './components/AppWorkingProcess.vue';
 import { store } from './store';
 
 
@@ -12,7 +14,8 @@ export default {
   components: {
     AppHeader,
     AppFooter,
-    AppCarosel
+    AppCarosel,
+    // AppWorkingProcess,
 
   },
   data() {
@@ -27,6 +30,7 @@ export default {
   <AppCarosel />
   <AppHeader />
   <router-view></router-view>
+  <AppWorkingProcess />  
   <AppFooter />
 
 </template>
