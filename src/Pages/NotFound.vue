@@ -8,4 +8,4 @@ export default {
     <h2>Page Not Found</h2>
 </template>
 
-<style></style>
+<style lang="scss" scoped></style>
