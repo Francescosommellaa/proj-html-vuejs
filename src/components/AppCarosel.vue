@@ -12,53 +12,53 @@ export default {
 </script>
 <template>
     <div id="Carosel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#Carosel" data-bs-slide-to="0"
-                class="active bg bg-dark rounded-circle" aria-current="true" aria-label="Slide 1"></button>
+        <div class="carousel-indicators m-auto  ">
+            <button type="button" data-bs-target="#Carosel" data-bs-slide-to="0" class="active bg bg-dark "
+                aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#Carosel" data-bs-slide-to="1" aria-label="Slide 2"
-                class="btn bg bg-dark rounded-circle"></button>
+                class="btn bg bg-dark "></button>
             <button type="button" data-bs-target="#Carosel" data-bs-slide-to="2" aria-label="Slide 3"
-                class="btn bg bg-dark rounded-circle  "></button>
+                class="btn bg bg-dark  "></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
                     <div class="row">
-                        <div class="col-6 p-5">
+                        <div class="col-5 p-5 m-auto">
                             <h2>Pojects made whith <strong>Love</strong></h2>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos accusamus alias esse et
                                 fugit minus libero in error? Maxime libero odio provident rerum nam ipsum natus illo
                                 reiciendis rem minus!</p>
                             <button type="button" class="btn btn-outline-primary"><a href="#">Read More</a></button>
                         </div>
-                        <div class="col-6"><img src="/public/short-slider-rev-1-img-5.png" class="img-fluid" alt="...">
+                        <div class="col-5"><img src="/public/short-slider-rev-1-img-5.png" class="img-fluid" alt="...">
                         </div>
                     </div>
 
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
                     <div class="row">
-                        <div class="col-6 p-5">
+                        <div class="col-5 p-5 m-auto">
                             <h2>Our new folio full of<strong>joy</strong></h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ut illum similique,
                                 dolor quasi quas dolores consequuntur unde aperiam totam esse porro facilis nihil.
                                 Illum, totam! Unde corporis officia maxime.</p>
                             <button type="button" class="btn btn-outline-primary"><a href="#">Read More</a></button>
                         </div>
-                        <div class="col-6"><img src="/public/short-slider-rev-1-img-5.png" class="img-fluid" alt="...">
+                        <div class="col-5"><img src="/public/short-slider-rev-1-img-5.png" class="img-fluid" alt="...">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-6 p-5">
+                    <div class="row ">
+                        <div class="col-5 p-5 m-auto">
                             <h2>Devotion get never <strong>ends</strong></h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid corrupti quibusdam,
                                 similique tempore eius officiis consequuntur suscipit nulla, tempora distinctio qui.
                                 Dolore, quae mollitia culpa adipisci rem quam id blanditiis?</p>
                             <button type="button" class="btn btn-outline-primary"> <a href="#">Read More</a> </button>
                         </div>
-                        <div class="col-6"><img src="/public/short-slider-rev-1-img-5.png" class="img-fluid" alt="...">
+                        <div class="col-5"><img src="/public/short-slider-rev-1-img-5.png" class="img-fluid" alt="...">
                         </div>
                     </div>
                 </div>
