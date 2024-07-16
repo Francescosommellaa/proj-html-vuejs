@@ -2,6 +2,8 @@
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppWorkingProcess from './components/AppWorkingProcess.vue';
+import AppCarosel from './components/AppCarosel.vue';
+
 import { store } from './store';
 
 
@@ -23,7 +25,7 @@ export default {
 </script>
 
 <template>
-  <AppCarosel />
+  <!-- <AppCarosel /> -->
   <AppHeader />
   <router-view></router-view>
   <AppWorkingProcess />  
