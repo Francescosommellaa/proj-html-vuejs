@@ -1,10 +1,6 @@
 <script>
-
-
-
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
-import AppWorkingProcess from './components/AppWorkingProcess.vue';
 import AppWorkingProcess from './components/AppWorkingProcess.vue';
 import { store } from './store';
 

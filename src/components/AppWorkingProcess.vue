@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-
+    osdfh oanf ojn
 </template>
 
 <style lang="scss" scoped>
