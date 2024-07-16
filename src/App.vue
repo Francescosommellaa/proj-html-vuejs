@@ -18,9 +18,11 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
-  <route-view></route-view>
-  <AppFooter />
+  <div class="container">
+    <AppHeader />
+    <route-view></route-view>
+    <AppFooter />
+  </div>
 </template>
 
 <style lang="scss">
