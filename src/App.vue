@@ -17,7 +17,7 @@ export default {
 
 <template>
 
-
+  <route-view></route-view>
 </template>
 
 <style lang="scss">
