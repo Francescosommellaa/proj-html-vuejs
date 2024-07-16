@@ -16,8 +16,9 @@ export default {
 </script>
 
 <template>
-
-  <route-view></route-view>
+  <div class="container">
+    <route-view></route-view>
+  </div>
 </template>
 
 <style lang="scss">
