@@ -1,7 +1,7 @@
 <script>
 
 
-import AppCarosel from './components/AppCarosel.vue'
+
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import { store } from './store';
@@ -12,7 +12,7 @@ export default {
   components: {
     AppHeader,
     AppFooter,
-    AppCarosel
+
 
   },
   data() {
