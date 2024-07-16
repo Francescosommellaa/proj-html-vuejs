@@ -1,7 +1,7 @@
 <script>
 
 
-
+import AppCarosel from './components/AppCarosel.vue'
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import { store } from './store';
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <template>
-
+  <AppCarosel />
   <AppHeader />
   <router-view></router-view>
   <AppFooter />
