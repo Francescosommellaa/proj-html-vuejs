@@ -50,7 +50,6 @@ export default {
 
 .ms_bg {
     background-image: url('..//..//public/h-2-background-1.jpg');
-    height: 500px;
     padding: 80px;
     background-size: cover;
     object-position: center;
