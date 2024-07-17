@@ -76,18 +76,11 @@ export default {
     .ms_btn {
         margin-top: 50px;
         background-color: $backgroud-color8;
-<<<<<<< HEAD
-        padding: 10px 20px;  
-        text-transform: uppercase;     
-        cursor: pointer;
-        text-align:center;
-=======
         width: 120px;
         height: 60px;
         align-content: center;
         text-transform: uppercase;
         cursor: pointer;
->>>>>>> 9d43285c9156c93f752578dde6522244a5d7ef52
     }
 }
 </style>
