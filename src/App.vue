@@ -3,9 +3,8 @@ import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppWorkingProcess from './components/AppWorkingProcess.vue';
 import AppCarosel from './components/AppCarosel.vue';
-
+import AppWorkContacts from './components/AppWorkContacts.vue';
 import { store } from './store';
-
 
 export default {
   name: 'App',
@@ -14,6 +13,7 @@ export default {
     AppFooter,
     AppCarosel,
     AppWorkingProcess,
+    AppWorkContacts,
 
   },
   data() {
@@ -28,7 +28,8 @@ export default {
   <!-- <AppCarosel /> -->
   <AppHeader />
   <router-view></router-view>
-  <AppWorkingProcess />  
+  
+   
   <AppFooter />
 
 </template>
