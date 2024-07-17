@@ -14,20 +14,19 @@ export default {
     <!-- sezione lavora con noi -->
     <section>
 
-        <div class="row mx--0">
+        <div class="row mx--0 ">
 
             <div class="col-12">
 
-                <div class="ms_bg">
 
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center align-items-center ms_bg">
                             <div class="col-8 ">
                                 <h2>Want to work with us? Send us <span>a message!</span></h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nobis architecto mollitia repellat aut at, ad facere deserunt illo veritatis consectetur eveniet magni fuga! Enim nesciunt animi vel nisi doloribus?</p>
                             </div>
                         </div>
 
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center ">
                             <div class="col-1">
                                 <div class="ms_btn">
                                     contact
@@ -36,7 +35,6 @@ export default {
                         </div>
 
                     
-                </div>
             </div>
         </div>
 
