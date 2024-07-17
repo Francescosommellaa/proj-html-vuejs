@@ -27,6 +27,7 @@ export default {
             <div class="row">
                 <div class="col-3">
                     <div class="text">
+                        <i class="fa-regular fa-lightbulb"></i>
                         <h4>First Theres </h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
@@ -34,12 +35,14 @@ export default {
 
                 <div class="col-3">
                     <div class="text">
+                        <i class="fa-regular fa-comment"></i>
                         <h4>Then we talk about </h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
                 </div>
 
                 <div class="col-3">
+                    <i class="fa-solid fa-cloud"></i>
                     <div class="text">
                         <h4>And we think about </h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -47,6 +50,7 @@ export default {
                 </div>
 
                 <div class="col-3">
+                    <i class="fa-solid fa-pen"></i>
                     <div class="text">
                         <h4>So we draw along </h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
