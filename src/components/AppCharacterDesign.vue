@@ -40,6 +40,13 @@ export default {
     width: fit-content;
     padding: 10px 20px ;
     font-weight: 800;
+    cursor: pointer;
+    transition: all .8s ease;
+    &:hover{
+        box-shadow: 0 0 0 5vw $border4 inset;
+        color: white;
+    }
+
 }
 
 h3{
