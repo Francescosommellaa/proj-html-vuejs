@@ -7,23 +7,21 @@ export default {
             store,
             texts: 'document.querySelectorAll(".slidetext")',
         }
-
-
-
     },
     methods: {
         reloadAnimations() {
+            /* refresh text anim*/
             document.getAnimations().forEach((anim) => {
-                /*  anim.cancel(); */
                 anim.play();
-                const gift = document.querySelectorAll(".magic");
-                gift.forEach((magicGif) => {
-                    magicGif.src = magicGif.getAttribute('src');
-                });
             });
-        }
-    }
-};
+            /* refresh gift */
+            const gift = document.querySelectorAll(".magic");
+            gift.forEach((magicGif) => {
+                magicGif.src = magicGif.getAttribute('src');
+            });
+        },
+    },
+}
 
 </script>
 <template>
@@ -42,8 +40,8 @@ export default {
                     <div class="row">
 
                         <div class="col-5 mx-auto text-start p-5">
-                            <h2 id="prova" class="slidetext title-start">Pojects made</h2>
-                            <h2 class="slidetext title-end"> whith <strong>Love</strong></h2>
+                            <h1 class="display-3 slidetext title-start">Pojects made</h1>
+                            <h1 class="display-3 slidetext title-end"> whith <strong>Love</strong></h1>
                             <p class="slidetext subtitle-start">Lorem, ipsum dolor sit amet consectetur adipisicing
                                 elit.
                                 Eos
@@ -60,8 +58,8 @@ export default {
                     <div class="row">
 
                         <div class="col-5 mx-auto text-start p-5">
-                            <h2 id="prova" class="slidetext title-start">Our new folio</h2>
-                            <h2 class="slidetext title-end">full of <strong>joy</strong></h2>
+                            <h1 class="display-3 slidetext title-start">Our new folio</h1>
+                            <h1 class="display-3 slidetext title-end">full of <strong>joy</strong></h1>
                             <p class="slidetext subtitle-start">Lorem, ipsum dolor sit amet consectetur adipisicing
                                 elit.
                                 Eos
@@ -77,8 +75,8 @@ export default {
                 <div class="carousel-item" data-bs-interval="10000">
                     <div class="row">
                         <div class="col-5 mx-auto text-start p-5">
-                            <h2 id="prova" class="slidetext title-start">evotion get </h2>
-                            <h2 class="slidetext title-end"> never <strong>ends</strong></h2>
+                            <h1 class="display-3 slidetext title-start">evotion get </h1>
+                            <h1 class="display-3 slidetext title-end"> never <strong>ends</strong></h1>
                             <p class="slidetext subtitle-start">Lorem, ipsum dolor sit amet consectetur adipisicing
                                 elit.
                                 Eos
@@ -110,13 +108,11 @@ export default {
 @use '../styles/general.scss';
 @use '../styles/variabiles' as *;
 
-#Carosel .col-10 {
+#Carosel {
     height: 70vh;
 
     p,
-    h2 {
-        width: 50%;
-    }
+    h1 {}
 
     img {}
 }

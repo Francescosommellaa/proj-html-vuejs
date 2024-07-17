@@ -15,27 +15,26 @@ export default {
 </script>
 
 <template>
-
-    <div class="row px-3 mb-0 d-flex  align-items-center ">
-        <div class="col-6">
-            <div class="row">
-                <div class="col-8 mx-auto"> <img src="/public/h-2-port-img-6.jpg" alt=""></div>
-            </div>
-
+    <div class="row px-3 mb-0 d-flex align-items-center justify-content-center">
+        <div class="col-4 mb-5">
+            <img src="/public/h-2-port-img-6.jpg" alt="">
         </div>
-        <div class="col-6 pt-5 ">
+        <div class="col-4 pt-5 ps-5 mb-5">
             <AppTabs />
         </div>
     </div>
-    <div class="row px-3  d-flex  align-items-center ">
-        <div class="col-6">
+    <div class="row px-3  d-flex  align-items-center justify-content-center ">
+        <div class="col-4 pe-5">
             <h3>Vibes loving <strong>intro</strong></h3>
-            <p>Mundi dolore molestie cu qui, duo homero accumsan eligendi cu. Id nam posse ocurreret disputando, ad sed
-                nihil eirmod theophrastus. Ut civibus noluisse ocurreret mel, duo bonorum accusamus torquatos id. Viris
-                voluptaria vituperata et quo, putent bonorum nam in. Prodesset signiferumque nec an. Aenean massa. Cum
+            <p>Mundi dolore molestie cu qui, duo homero accumsan eligendi cu. Id nam posse ocurreret disputando, ad
+                sed
+                nihil eirmod theophrastus. Ut civibus noluisse ocurreret mel, duo bonorum accusamus torquatos id.
+                Viris
+                voluptaria vituperata et quo, putent bonorum nam in. Prodesset signiferumque nec an. Aenean massa.
+                Cum
                 sociis Theme natoque penatibus et magnis dis parturient montes, nascetur.</p>
         </div>
-        <div class="col-6">
+        <div class="col-4">
             <AppProgres />
         </div>
     </div>
