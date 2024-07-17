@@ -28,7 +28,7 @@ export default {
 
 <!-- sezione animation -->
     <div class="row px-3 mb-0 d-flex align-items-center justify-content-center">
-        <div class="col-4 mb-5">
+        <div class="col-3 mb-5">
             <img src="/public/h-2-port-img-6.jpg" alt="">
         </div>
         <div class="col-4 pt-5 ps-5 mb-5">
@@ -38,7 +38,7 @@ export default {
 
     <!-- sezione vibes loving -->
     <div class="row px-3  d-flex  align-items-center justify-content-center ">
-        <div class="col-4 pe-5">
+        <div class="col-3 pe-5">
             <h3>Vibes loving <strong>intro</strong></h3>
             <p>Mundi dolore molestie cu qui, duo homero accumsan eligendi cu. Id nam posse ocurreret disputando, ad
                 sed
@@ -48,16 +48,26 @@ export default {
                 Cum
                 sociis Theme natoque penatibus et magnis dis parturient montes, nascetur.</p>
         </div>
-        <div class="col-4">
-            <AppProgres />
+       
+            <div class="col-4">
+                <AppProgres />
+            </div>
+      
+        
+        <div class="row align-items-center justify-content-center">
+            <div class="col-7">
+                <AppCardOffer />
+            </div>
         </div>
+        
     </div>
-    <AppCardOffer />
+    
+    
 
     <!-- sezione newsletter -->
 
     <div class="row align-items-center justify-content-center">
-        <div class="col-6">
+        <div class="col-7">
             
                 <div class="row title align-items-center justify-content-center">
                     <div class="col-6">
