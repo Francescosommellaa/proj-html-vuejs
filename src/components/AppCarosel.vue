@@ -5,8 +5,24 @@ export default {
     data() {
         return {
             store,
+            texts: 'document.querySelectorAll(".slidetext")',
         }
+
+
+
     },
+    methods: {
+        reloadAnimations() {
+            document.getAnimations().forEach((anim) => {
+                /*  anim.cancel(); */
+                anim.play();
+                const gift = document.querySelectorAll(".magic");
+                gift.forEach((magicGif) => {
+                    magicGif.src = magicGif.getAttribute('src');
+                });
+            });
+        }
+    }
 };
 
 </script>
@@ -23,55 +39,66 @@ export default {
         <div class="carousel-inner">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="row ">
-                        <div class="col-10 mx-auto text-start p-5">
-                            <h2>Pojects made <br> whith <strong>Love</strong></h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos accusamus alias esse et
-                                fugit minus libero in error? Maxime libero odio provident rerum nam ipsum natus illo
-                                reiciendis rem minus!</p>
-                            <button type="button" class="btn btn-outline-primary"><a href="#">Read More</a></button>
-                            <img src="/public/short-slider-rev-1-img-3.png" alt="...">
-                            <img src="/public/short-slider-rev-1-img-1.png" alt="...">
-                        </div>
-                    </div>
-
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
                     <div class="row">
-                        <div class="col-10 mx-auto">
-                            <h2>Our new folio <br> full of <strong>joy</strong></h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ut illum similique,
-                                dolor quasi quas dolores consequuntur unde aperiam totam esse porro facilis nihil.
-                                Illum, totam! Unde corporis officia maxime.</p>
-                            <button type="button" class="btn btn-outline-primary"><a href="#">Read More</a></button>
 
-                            <img src="/public/h-2-slider-img-11.png" class="img-fluid" alt="...">
-
+                        <div class="col-5 mx-auto text-start p-5">
+                            <h2 id="prova" class="slidetext title-start">Pojects made</h2>
+                            <h2 class="slidetext title-end"> whith <strong>Love</strong></h2>
+                            <p class="slidetext subtitle-start">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Eos
+                                accusamus alias </p>
+                            <p class="slidetext subtitle-end"> esse et fugit minus libero in error? Maxime libero odio
+                            </p>
+                            <button type="button" class="slidetext slider-btn btn btn-outline-primary"><a href="#">Read
+                                    More</a></button>
                         </div>
+                        <div class="col-5"> <img class="magic" src="/public/magic01.gif" alt="..."></div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="row ">
-                        <div class="col-10 mx-auto">
-                            <h2>Devotion get <br>never <strong>ends</strong></h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid corrupti quibusdam,
-                                similique tempore eius officiis consequuntur suscipit nulla, tempora distinctio qui.
-                                Dolore, quae mollitia culpa adipisci rem quam id blanditiis?</p>
-                            <button type="button" class="btn btn-outline-primary"> <a href="#">Read More</a> </button>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <div class="row">
 
-                            <div class="col-5 me-auto"><img src="/public/h-2-slider-img-15.png" class="img-fluid"
-                                    alt="...">
-                                <img src="/public/h-2-slider-img-16.png" class="img-fluid" alt="...">
-                            </div>
+                        <div class="col-5 mx-auto text-start p-5">
+                            <h2 id="prova" class="slidetext title-start">Our new folio</h2>
+                            <h2 class="slidetext title-end">full of <strong>joy</strong></h2>
+                            <p class="slidetext subtitle-start">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Eos
+                                accusamus alias </p>
+                            <p class="slidetext subtitle-end"> esse et fugit minus libero in error? Maxime libero odio
+                            </p>
+                            <button type="button" class="slidetext slider-btn btn btn-outline-primary"><a href="#">Read
+                                    More</a></button>
                         </div>
+                        <div class="col-5"> <img class="magic" src="/public/magic02.gif" alt="..."></div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <div class="row">
+                        <div class="col-5 mx-auto text-start p-5">
+                            <h2 id="prova" class="slidetext title-start">evotion get </h2>
+                            <h2 class="slidetext title-end"> never <strong>ends</strong></h2>
+                            <p class="slidetext subtitle-start">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Eos
+                                accusamus alias </p>
+                            <p class="slidetext subtitle-end"> esse et fugit minus libero in error? Maxime libero odio
+                            </p>
+                            <button type="button" class="slidetext slider-btn btn btn-outline-primary"><a href="#">Read
+                                    More</a></button>
+                        </div>
+                        <div class="col-5 ms-0"> <img class="magic" src="/public/magic03.gif" alt="..."></div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev " type="button" data-bs-target="#Carosel" data-bs-slide="prev">
+            <button @click="reloadAnimations" class="carousel-control-prev" type="button" data-bs-target="#Carosel"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon " aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next " type="button" data-bs-target="#Carosel" data-bs-slide="next">
+            <button @click="reloadAnimations" class="carousel-control-next" type="button" data-bs-target="#Carosel"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon " aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -91,10 +118,7 @@ export default {
         width: 50%;
     }
 
-    img {
-        float: right;
-        width: 50%;
-    }
+    img {}
 }
 
 .carousel-indicators {
@@ -104,5 +128,48 @@ export default {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(100%);
+}
+
+.carousel-control-prev {
+    transform: translateX(-70px);
+}
+
+.carousel-control-next {
+    transform: translateX(70px);
+}
+
+.slidetext {
+    animation-name: showText;
+    animation-duration: 2s;
+}
+
+
+
+.title-end {
+    animation-delay: 0.4s;
+}
+
+.subtitle-start {
+    animation-delay: 0.8s;
+}
+
+.subtitle-end {
+    animation-delay: 1s;
+}
+
+.slider-btn {
+    animation-delay: 1.2s;
+}
+
+@keyframes showText {
+    from {
+        opacity: 0%;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateX(0);
+    }
 }
 </style>
