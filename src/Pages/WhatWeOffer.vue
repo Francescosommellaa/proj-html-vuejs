@@ -15,6 +15,16 @@ export default {
 </script>
 
 <template>
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-center title">
+            <div class="col-2">
+                <h3>What we <span>offer</span> </h3>
+            </div>
+        </div>
+    </div>
+    
+
+
     <div class="row px-3 mb-0 d-flex align-items-center justify-content-center">
         <div class="col-4 mb-5">
             <img src="/public/h-2-port-img-6.jpg" alt="">
@@ -45,10 +55,25 @@ export default {
 @use '../styles/general.scss';
 @use '../styles/variabiles' as *;
 
+.title{
+    background-image: url('../../public/h-2-background-1.jpg');
+    height: 300px;
+    margin-bottom: 3%;
+}
+
 img {
 
     width: 100%;
     aspect-ratio: 1/0.8;
 
+}
+
+h3{
+    font-size: 50px;
+    font-weight: 500;
+    span{
+        font-family: italic;
+        font-weight: 900;
+    }
 }
 </style>
