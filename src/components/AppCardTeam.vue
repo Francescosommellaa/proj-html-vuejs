@@ -13,12 +13,10 @@ export default {
 
 <template>
 <div class="container-card d-flex flex-wrap">
-    <div v-for="(item, index) in store.illustration" :key="index" class="ms-card">
+    <div v-for="(item, index) in store.team" :key="index" class="ms-card">
         <img :src="item.pic" alt="illustration" />
         <div class="text">
-            <a href="#">
-                {{ item.title }}
-            </a>
+            {{ item.name }}
         </div>
     </div>
 </div>
@@ -29,7 +27,7 @@ export default {
 @use '../styles/variabiles' as *;
 
 .ms-card {
-    width: calc(100% / 3);
+    width: calc(100% / 6);
     position: relative;
     cursor: pointer;
     overflow: hidden;
@@ -39,8 +37,7 @@ export default {
         background-color: #fff;
         position: absolute;
         left: -50%;
-        top: 50%;
-        transform: translate(0 -50%);
+        bottom: 5px;
         padding: 0.5em;
         transition: left 0.5s ease;
 
