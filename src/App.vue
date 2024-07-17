@@ -6,6 +6,7 @@ import AppCarosel from './components/AppCarosel.vue';
 import AppWorkContacts from './components/AppWorkContacts.vue';
 import { store } from './store';
 import AppProgres from './components/AppProgres.vue';
+import AppCardOffer from './components/AppCardOffer.vue';
 
 
 export default {
@@ -16,8 +17,8 @@ export default {
     AppCarosel,
     AppWorkingProcess,
     AppWorkContacts,
-    AppProgres
-
+    AppProgres,
+    AppCardOffer
   },
   data() {
     return {
