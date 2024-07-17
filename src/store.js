@@ -51,27 +51,27 @@ export const store = reactive({
     },
     {
       pic: "public/h-2-port-img-2.jpg",
-      title: "All these illustration",
+      title: "Type and Illustrations",
       tip: "Illustration",
     },
     {
       pic: "public/h-2-port-img-3.jpg",
-      title: "All these illustration",
+      title: "Draw and illustrate",
       tip: "Illustration",
     },
     {
       pic: "public/h-2-port-img-4.jpg",
-      title: "All these illustration",
+      title: "Illustration of novels",
       tip: "Illustration",
     },
     {
       pic: "public/h-2-port-img-5.jpg",
-      title: "All these illustration",
+      title: "Too many illustrations",
       tip: "Illustration",
     },
     {
       pic: "public/h-2-port-img-6.jpg",
-      title: "All these illustration",
+      title: "Dreams are illustrations",
       tip: "Illustration",
     },
   ],

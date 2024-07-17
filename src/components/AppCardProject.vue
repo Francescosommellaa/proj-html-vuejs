@@ -17,7 +17,8 @@ export default {
         <img :src="item.pic" alt="illustration" />
         <div class="text">
             <a href="#">
-                {{ item.title }}
+                <h2>{{ item.title }}</h2>
+                <em>{{ item.tip }}</em>
             </a>
         </div>
     </div>
@@ -35,18 +36,21 @@ export default {
     overflow: hidden;
 
     .text {
-        width: 100px;
+        width: 80%;
         background-color: #fff;
         position: absolute;
-        left: -50%;
-        top: 50%;
-        transform: translate(0 -50%);
-        padding: 0.5em;
+        left: -100%;
+        bottom: 30%;
+        padding: 2em 0.5em;
         transition: left 0.5s ease;
 
         a {
             text-decoration: none;
             color: black;
+        }
+
+        h2 {
+            width: 180px;
         }
     }
     
