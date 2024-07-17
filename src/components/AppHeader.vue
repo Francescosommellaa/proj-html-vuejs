@@ -33,13 +33,13 @@ export default {
     <div>
       <ul>
           <li>
-              <router-link :to="{ name: Home }">Home</router-link>
+              <router-link :to="{ name: 'Home' }">Home</router-link>
           </li>
           <li>
-              <router-link :to="{ name: OurTeam }">OurTeam</router-link>
+              <router-link :to="{ name: 'OurTeam' }">OurTeam</router-link>
           </li>
           <li>
-              <router-link :to="{ name: WhatWeOffer }">WhatWeOffer</router-link>
+              <router-link :to="{ name: 'WhatWeOffer' }">WhatWeOffer</router-link>
           </li>
         </ul>
     </div>
