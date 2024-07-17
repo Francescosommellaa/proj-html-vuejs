@@ -1,11 +1,25 @@
 <script>
+import AppCardOffer from '../components/AppCardOffer.vue';
+import AppCarosel from '../components/AppCarosel.vue';
+import AppWorkContacts from '../components/AppWorkContacts.vue';
+import AppWorkingProcess from '../components/AppWorkingProcess.vue';
+
 export default {
-    name: 'Home'
+    name: 'Home',
+    components: {
+        AppCarosel,
+        AppWorkingProcess,
+        AppWorkContacts,
+        AppCardOffer
+    }
 }
 </script>
 
 <template>
-    <h2>Home</h2>
+    <AppCarosel />
+    <AppWorkingProcess />
+    <AppWorkContacts />
+    <AppCardOffer />
 </template>
 
 <style lang="scss" scoped>
