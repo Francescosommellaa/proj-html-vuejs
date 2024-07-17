@@ -7,15 +7,16 @@ export default {
         }
     },
     methods: {
-        openCity(cityName) {
+        openCity(cityName, buttonName) {
             let bordercol = document.getElementsByClassName("col-4")
             var x = document.getElementsByClassName("city");
             for (let i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
-                bordercol[i].classList.remove(active);
+                bordercol[i].classList.remove("activ-color");
             }
             document.getElementById(cityName).style.display = "block";
-
+            document.getElementById(buttonName).classList.add("activ-color");
+            console.log(document.getElementById(buttonName));
         }
     }
 }
@@ -25,12 +26,16 @@ export default {
     <div class="row">
         <div class="col-10">
             <div class="row border-bottom   d-flex justify-content-between">
-                <div class="col-4 text-start active"> <button class="border-0 bg-transparent text-uppercase "
-                        id="buttoAnimation" @click="this.openCity('Animation')">Animation</button></div>
-                <div class="col-4 text-center"> <button class="border-0  bg-transparent text-uppercase "
-                        @click="this.openCity('Design')">Design</button></div>
-                <div class="col-4 text-end"> <button class="border-0 bg-transparent text-uppercase text-end"
-                        @click="this.openCity('Lettering')">Lettering</button>
+                <div id="buttoAnimation" class="col-4 text-start activ-color"> <button
+                        class="border-0 bg-transparent text-uppercase "
+                        @click="this.openCity('Animation', 'buttoAnimation')">Animation</button>
+                </div>
+                <div id="buttonDesign" class="col-4 text-center"> <button
+                        class="border-0  bg-transparent text-uppercase "
+                        @click="this.openCity('Design', 'buttonDesign')">Design</button></div>
+                <div id="buttonLettering" class="col-4 text-end"> <button
+                        class="border-0 bg-transparent text-uppercase text-end"
+                        @click="this.openCity('Lettering', 'buttonLettering')">Lettering</button>
                 </div>
             </div>
 
@@ -73,7 +78,7 @@ export default {
 @use '../styles/general.scss';
 @use '../styles/variabiles' as *;
 
-.active {
+.activ-color {
     border-bottom: 5px solid $backgroud-color10;
 
 }
