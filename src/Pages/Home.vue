@@ -1,5 +1,6 @@
 <script>
 import AppCardOffer from '../components/AppCardOffer.vue';
+import AppCardProject from '../components/AppCardProject.vue';
 import AppCarosel from '../components/AppCarosel.vue';
 import AppWorkContacts from '../components/AppWorkContacts.vue';
 import AppWorkingProcess from '../components/AppWorkingProcess.vue';
@@ -10,13 +11,15 @@ export default {
         AppCarosel,
         AppWorkingProcess,
         AppWorkContacts,
-        AppCardOffer
+        AppCardOffer,
+        AppCardProject,
     }
 }
 </script>
 
 <template>
     <AppCarosel />
+    <AppCardProject/>
     <AppWorkingProcess />
     <AppWorkContacts />
     <AppCardOffer />

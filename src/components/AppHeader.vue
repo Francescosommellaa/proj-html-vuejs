@@ -10,8 +10,8 @@ export default {
 <template>
 
   <nav class="navbar">
-    <img src="../../public/logo-sidearea-1-1.png" alt="Logo Marèe">
-    <div class="d-flex align-items-center ">
+    <img class="logo-header" src="../../public/logo-sidearea-1-1.png" alt="Logo Marèe">
+    <div class="d-flex align-items-center">
       <div>
         <ul class="d-flex align-items-center">
           <li class="ms-listlink ms-underline-fc3">
@@ -51,6 +51,7 @@ export default {
   .menu-header {
     height: 24px;
     width: 24px;
+    margin-right: 4em;
   }
 }
 </style>

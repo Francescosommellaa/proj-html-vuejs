@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource/playfair-display": "^5.0.24",
+    "@fortawesome/fontawesome-free": "^6.6.0",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "vue": "^3.4.31",

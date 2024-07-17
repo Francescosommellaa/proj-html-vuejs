@@ -18,20 +18,22 @@ export default {
 
             <div class="col-12">
 
-                        <div class="row justify-content-center">
-                            <div class="col-8 ">
-                                <h2>Want to work with us? Send us <span>a message!</span></h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nobis architecto mollitia repellat aut at, ad facere deserunt illo veritatis consectetur eveniet magni fuga! Enim nesciunt animi vel nisi doloribus?</p>
-                            </div>
-                        </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 ">
+                        <h2>Want to work with us? Send us <span>a message!</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nobis architecto
+                            mollitia repellat aut at, ad facere deserunt illo veritatis consectetur eveniet magni fuga!
+                            Enim nesciunt animi vel nisi doloribus?</p>
+                    </div>
+                </div>
 
-                        <div class="row justify-content-center ">
-                            <div class="col-2">
-                                <div class="ms_btn">
-                                    contact
-                                </div>
-                            </div>
+                <div class="row justify-content-center ">
+                    <div class="col-1">
+                        <div class="text-center ms_btn">
+                            contact
                         </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -54,7 +56,7 @@ export default {
     object-position: center;
     background-repeat: no-repeat;
 
-    h2{
+    h2 {
         font-size: 70px;
         text-align: center;
 
@@ -64,20 +66,28 @@ export default {
         }
     }
 
-    p{
+    p {
         margin-top: 30px;
         font-size: 25px;
         text-align: center;
         color: $text-colors5;
     }
 
-    .ms_btn{
+    .ms_btn {
         margin-top: 50px;
         background-color: $backgroud-color8;
+<<<<<<< HEAD
         padding: 10px 20px;  
         text-transform: uppercase;     
         cursor: pointer;
         text-align:center;
+=======
+        width: 120px;
+        height: 60px;
+        align-content: center;
+        text-transform: uppercase;
+        cursor: pointer;
+>>>>>>> 9d43285c9156c93f752578dde6522244a5d7ef52
     }
 }
 </style>

@@ -1,4 +1,8 @@
 @use "/node_modules/bootstrap/scss/bootstrap";
+
+// fortawesome
+@use "@fortawesome/fontawesome-free/css/all.min.css";
+
 @import "@fontsource/playfair-display"; // Defaults to weight 400
 @import "@fontsource/playfair-display/400.css"; // Specify weight
 @import "@fontsource/playfair-display/400-italic.css"; // Specify weight and style
@@ -17,6 +21,7 @@ img {
 
 .ms-listlink {
     list-style: none;
+    cursor: pointer;
 }
 
 
@@ -37,7 +42,7 @@ img {
         transition-property: left right;
         transition-duration: 0.3s;
         transition-timing-function: ease-out;
-        background: #BADAC9;
+        background-color: #BADAC9;
     }
 
     :hover:after,

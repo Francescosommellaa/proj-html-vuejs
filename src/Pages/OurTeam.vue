@@ -1,11 +1,22 @@
 <script>
+import AppAccording from '../components/AppAccording.vue';
+import AppCardTeam from '../components/AppCardTeam.vue';
+import AppCaroselCit from '../components/AppCaroselCit.vue';
+
 export default {
-    name: 'OurTeam'
+    name: 'OurTeam',
+    components: {
+        AppCaroselCit,
+        AppAccording,
+        AppCardTeam
+    }
 }
 </script>
 
 <template>
-    <h2>OurTeam</h2>
+    <AppCardTeam />
+    <AppCaroselCit />
+    <AppAccording />
 </template>
 
 <style lang="scss" scoped></style>

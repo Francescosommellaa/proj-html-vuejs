@@ -45,8 +45,8 @@ export default {
                         <div class="card border border-0 position-relative">
                             <img class=" card-img-top rounded-0" src="/public/h-2-blog-img-1.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">This way,loves:a detailed guide through new design</h5>
-                                <italic class="card-text">by Emily Fields/ Art, Illustration</italic>
+                                <h5 class="card-title ">This way,loves:a detailed guide through new design</h5>
+                                <italic class="card-text ms-underline-fc2">by Emily Fields/ Art, Illustration</italic>
                             </div>
                             <div class="box">
                                 <div class="text-center">07</div>
