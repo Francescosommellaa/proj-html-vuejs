@@ -8,12 +8,14 @@ export default {
     },
     methods: {
         openCity(cityName) {
-
+            let bordercol = document.getElementsByClassName("col-4")
             var x = document.getElementsByClassName("city");
             for (let i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
+                bordercol[i].classList.remove(active);
             }
             document.getElementById(cityName).style.display = "block";
+
         }
     }
 }
@@ -22,26 +24,46 @@ export default {
 <template>
     <div class="row">
         <div class="col-10">
-            <div class="w3-bar w3-black ">
-                <button class="w3-bar-item w3-button" @click="this.openCity('London')">London</button>
-                <button class="w3-bar-item w3-button" @click="this.openCity('Paris')">Paris</button>
-                <button class="w3-bar-item w3-button" @click="this.openCity('Tokyo')">Tokyo</button>
+            <div class="row border-bottom   d-flex justify-content-between">
+                <div class="col-4 text-start active"> <button class="border-0 bg-transparent text-uppercase "
+                        id="buttoAnimation" @click="this.openCity('Animation')">Animation</button></div>
+                <div class="col-4 text-center"> <button class="border-0  bg-transparent text-uppercase "
+                        @click="this.openCity('Design')">Design</button></div>
+                <div class="col-4 text-end"> <button class="border-0 bg-transparent text-uppercase text-end"
+                        @click="this.openCity('Lettering')">Lettering</button>
+                </div>
             </div>
+
         </div>
         <div class="col-10">
-            <div id="London" class="w3-container city" style="display:none">
-                <h2>London</h2>
-                <p>London is the capital city of England.</p>
+            <div id="Animation" class="w3-container city">
+
+                <p class='text-left'>Hinc assum pro ea. Meis verear an vel, ex quando legere scriptorem has, mea vide
+                    vidisse
+                    an. Eius
+                    eirmod vel in, quo simul salutatus incorrupte ex, nisl nonumes democritum per te. Ex mei illud illum
+                    laudem, quem bonorum ius ne. His an omnes propriae fabellas, an duo aeterno expetenda explicari, ea
+                    vix propriae deseruisse. Munere utamur vertere.</p>
             </div>
 
-            <div id="Paris" class="w3-container city" style="display:none">
-                <h2>Paris</h2>
-                <p>Paris is the capital of France.</p>
-            </div>
+            <div id="Design" class="w3-container city" style="display:none">
 
-            <div id="Tokyo" class="w3-container city" style="display:none">
-                <h2>Tokyo</h2>
-                <p>Tokyo is the capital of Japan.</p>
+                <p class='text-left'>Paris is the capital of France.
+                    Integre appareat cu mea, te mel ferri percipitur efficiendi, in ius phaedrum invenire expetendis.
+                    Eius
+                    eirmod vel in, quo simul salutatus incorrupte ex, nisl nonumes democritum per te. Ex mei illud illum
+                    laudem,
+                    quem bonorum ius ne. His an omnes propriae fabellas, an duo aeterno expetenda explicari, ea vix
+                    propriae
+                    deseruisse. Inani expetendis ut cum.</p>
+            </div>
+            <div id="Lettering" class="w3-container city" style="display:none">
+
+                <p class='text-left'>Te sale iusto fabellas sed, eu sea tollit suscipiantur. Oblique omnesque ne eum, id
+                    putent malorum
+                    admodum vel, vix no tantas admodum nominavi. Eius eirmod vel in, quo simul salutatus incorrupte ex,
+                    nisl nonumes democritum per te. Ex mei illud illum laudem, quem bonorum ius ne. His an omnes
+                    propriae fabellas, an duo aeterno expetend.</p>
             </div>
         </div>
     </div>
@@ -50,4 +72,9 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/general.scss';
 @use '../styles/variabiles' as *;
+
+.active {
+    border-bottom: 5px solid $backgroud-color10;
+
+}
 </style>
