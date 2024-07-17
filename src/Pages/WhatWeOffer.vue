@@ -17,7 +17,9 @@ export default {
 <template>
 
     <div class="row">
-        <div class="col-6"></div>
+        <div class="col-6">
+            <img src="/public/h-2-port-img-6.jpg" alt="">
+        </div>
         <div class="col-6">
             <AppTabs />
         </div>
@@ -31,4 +33,7 @@ export default {
     <AppCardOffer />
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../styles/general.scss';
+@use '../styles/variabiles' as *;
+</style>
