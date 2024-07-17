@@ -19,14 +19,12 @@ export default {
   name: 'App',
   components: {
     AppHeader,
-    AppFooter,
     AppCarosel,
     AppWorkingProcess,
     AppWorkContacts,
     AppProgres,
     AppCardOffer,
-
-
+    AppFooter,
   },
   data() {
     return {
