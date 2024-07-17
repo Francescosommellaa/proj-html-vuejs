@@ -5,6 +5,8 @@ import AppWorkingProcess from './components/AppWorkingProcess.vue';
 import AppCarosel from './components/AppCarosel.vue';
 import AppWorkContacts from './components/AppWorkContacts.vue';
 import { store } from './store';
+import AppProgres from './components/AppProgres.vue';
+
 
 export default {
   name: 'App',
@@ -14,6 +16,7 @@ export default {
     AppCarosel,
     AppWorkingProcess,
     AppWorkContacts,
+    AppProgres
 
   },
   data() {
@@ -25,13 +28,14 @@ export default {
 </script>
 
 <template>
-  <!-- <AppCarosel /> -->
-  <AppHeader />
-  <router-view></router-view>
-  
-   
-  <AppFooter />
+  <div class="container-fluid">
 
+    <AppHeader />
+    <router-view></router-view>
+
+
+    <AppFooter />
+  </div>
 </template>
 
 <style lang="scss">
