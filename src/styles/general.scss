@@ -3,6 +3,12 @@
 @import "@fontsource/playfair-display/400.css"; // Specify weight
 @import "@fontsource/playfair-display/400-italic.css"; // Specify weight and style
 
+// fortawesome
+@import '@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '@fortawesome/fontawesome-free/css/regular.css';
+@import '@fortawesome/fontawesome-free/css/solid.css';
+@import '@fortawesome/fontawesome-free/css/brands.css';
+
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +23,7 @@ img {
 
 .ms-listlink {
     list-style: none;
+    cursor: pointer;
 }
 
 
