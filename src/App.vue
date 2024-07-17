@@ -51,9 +51,7 @@ export default {
   
 cursor: url('../public/icons8-cursore-67.png'),auto;
 --cursor-size: 2px;
-
-
-  
-   
 }
+
+
 </style>
