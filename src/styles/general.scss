@@ -18,3 +18,83 @@ img {
 .ms-listlink {
     list-style: none;
 }
+
+
+// UNDERLINE
+.ms-underline-fc1 {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+
+    :after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 5px;
+        height: 8px;
+        transition-property: left right;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        background: #BADAC9;
+    }
+
+    :hover:after,
+    :focus:after,
+    :active:after {
+        right: 0;
+    }
+}
+
+.ms-underline-fc2 {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+
+    :after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 5px;
+        height: 8px;
+        transition-property: left right;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        background: #EB6950;
+    }
+
+    :hover:after,
+    :focus:after,
+    :active:after {
+        right: 0;
+    }
+}
+
+.ms-underline-fc3 {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+
+    :after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 5px;
+        height: 8px;
+        transition-property: left right;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        background: #F0817B;
+    }
+
+    :hover:after,
+    :focus:after,
+    :active:after {
+        right: 0;
+    }
+}
