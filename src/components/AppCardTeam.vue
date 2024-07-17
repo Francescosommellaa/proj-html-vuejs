@@ -27,7 +27,7 @@ export default {
 @use '../styles/variabiles' as *;
 
 .ms-card {
-    width: calc(100% / 6);
+    width: calc(100% / 4);
     position: relative;
     cursor: pointer;
     overflow: hidden;

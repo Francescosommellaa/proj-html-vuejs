@@ -13,32 +13,32 @@ export const store = reactive({
       role: "Animation",
     },
     {
-      pic: "public\team-img-6.jpg",
+      pic: "public/team-img-6.jpg",
       name: "Alisha Selby",
       role: "Marketing manager",
     },
     {
-      pic: "public\team-img-8.jpg",
+      pic: "public/team-img-8.jpg",
       name: "Octavia Scala",
       role: "Frontend Developer",
     },
     {
-      pic: "public\team-img-9-1.jpg",
+      pic: "public/team-img-9-1.jpg",
       name: "Scott Scheetz",
       role: "Backend Developer",
     },
     {
-      pic: "public\team-img-10-1.jpg",
+      pic: "public/team-img-10-1.jpg",
       name: "Barbara Thomas",
       role: "Graphic Designer",
     },
     {
-      pic: "public\team-img-11-1.jpg",
+      pic: "public/team-img-11-1.jpg",
       name: "Jessie Lee",
       role: "Photographer",
     },
     {
-      pic: "public\team-img-12-1.jpg",
+      pic: "public/team-img-12-1.jpg",
       name: "Jessie Lee",
       role: "Creative Director",
     },
