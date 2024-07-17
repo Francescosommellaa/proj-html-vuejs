@@ -32,13 +32,13 @@ export default {
         <li class="ms-listlink ms-underline-fc3">1040 Brusless, Belgium</li>
       </ul>
     </div>
-    <div class="col-3">
+    <div class="col-3 ms-icon-container">
       <span>Stay in tuch with us</span>
-      <div>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-pinterest-p"></i>
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
+      <div class="d-flex justify-content-between ms-icon">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
     </div>
   </div>
@@ -53,5 +53,17 @@ export default {
   background-color: $backgroud-color8;
   padding: 6em 2em;
   font-size: 18px;
+
+  .ms-icon-container {
+    width: 190px;
+
+    .ms-icon {
+      margin-top: 0.5em;
+    }
+
+    a {
+      color: black;
+    }
+  }
 }
 </style>

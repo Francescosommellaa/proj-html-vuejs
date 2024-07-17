@@ -1,12 +1,11 @@
 @use "/node_modules/bootstrap/scss/bootstrap";
+
+// fortawesome
 @use "@fortawesome/fontawesome-free/css/all.min.css";
 
 @import "@fontsource/playfair-display"; // Defaults to weight 400
 @import "@fontsource/playfair-display/400.css"; // Specify weight
 @import "@fontsource/playfair-display/400-italic.css"; // Specify weight and style
-
-// fortawesome
-
 
 * {
     padding: 0;
