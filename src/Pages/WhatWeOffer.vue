@@ -15,16 +15,18 @@ export default {
 </script>
 
 <template>
-    <div class="container-fluid">
+
+    <!-- titolo -->
+    
         <div class="row align-items-center justify-content-center title">
             <div class="col-2">
                 <h3>What we <span>offer</span> </h3>
             </div>
         </div>
-    </div>
+    
     
 
-
+<!-- sezione animation -->
     <div class="row px-3 mb-0 d-flex align-items-center justify-content-center">
         <div class="col-4 mb-5">
             <img src="/public/h-2-port-img-6.jpg" alt="">
@@ -33,6 +35,8 @@ export default {
             <AppTabs />
         </div>
     </div>
+
+    <!-- sezione vibes loving -->
     <div class="row px-3  d-flex  align-items-center justify-content-center ">
         <div class="col-4 pe-5">
             <h3>Vibes loving <strong>intro</strong></h3>
@@ -49,6 +53,27 @@ export default {
         </div>
     </div>
     <AppCardOffer />
+
+    <!-- sezione newsletter -->
+
+    <div class="row align-items-center justify-content-center">
+        <div class="col-6">
+            
+                <div class="row title align-items-center justify-content-center">
+                    <div class="col-6">
+                        <h4>Subscribe to our <span>newsletter</span></h4>
+                        <form action="#">
+                            <input type="email" name="mail" id="mail" placeholder="Your E-mail">
+                            <div class="ms_btn">send</div>
+
+                        </form>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+
 </template>
 
 <style lang="scss" scoped>
@@ -75,5 +100,44 @@ h3{
         font-family: italic;
         font-weight: 900;
     }
+
+    
 }
+
+h4{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    span{
+        font-family: italic;
+        font-weight: 900;
+    }
+}
+
+#mail{
+    background-color: rgb(250, 247, 242) ;
+    border: 2px solid $border2;
+    width: 70%;
+    line-height: 30px;
+    padding: 10px;
+  
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.ms_btn {
+       
+        background-color: $backgroud-color8;
+        width: fit-content;
+        padding: 10px 50px;
+        align-content: center;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 30px;
+
+    }
 </style>
