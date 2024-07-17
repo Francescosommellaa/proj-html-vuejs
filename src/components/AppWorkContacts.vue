@@ -14,11 +14,9 @@ export default {
     <!-- sezione lavora con noi -->
     <section>
 
-        <div class="row mx--0">
+        <div class="row mx--0 ms_bg align-items-center">
 
             <div class="col-12">
-
-                <div class="ms_bg">
 
                         <div class="row justify-content-center">
                             <div class="col-8 ">
@@ -27,7 +25,7 @@ export default {
                             </div>
                         </div>
 
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center ">
                             <div class="col-1">
                                 <div class="ms_btn">
                                     contact
@@ -35,8 +33,6 @@ export default {
                             </div>
                         </div>
 
-                    
-                </div>
             </div>
         </div>
 
