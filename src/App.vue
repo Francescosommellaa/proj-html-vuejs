@@ -1,21 +1,32 @@
 <script>
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
-import Home from './Pages/Home.vue';
-import NotFound from './Pages/NotFound.vue';
-import OurTeam from './Pages/OurTeam.vue';
-import WhatWeOffer from './Pages/WhatWeOffer.vue';
+import AppWorkingProcess from './components/AppWorkingProcess.vue';
+import AppCarosel from './components/AppCarosel.vue';
+import AppWorkContacts from './components/AppWorkContacts.vue';
 import { store } from './store';
+import AppProgres from './components/AppProgres.vue';
+import AppCardOffer from './components/AppCardOffer.vue';
+
+
+
+
+
+
+
 
 export default {
   name: 'App',
   components: {
     AppHeader,
     AppFooter,
-    Home,
-    OurTeam,
-    WhatWeOffer,
-    NotFound,
+    AppCarosel,
+    AppWorkingProcess,
+    AppWorkContacts,
+    AppProgres,
+    AppCardOffer,
+
+
   },
   data() {
     return {
@@ -26,9 +37,12 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container-fluid">
+
     <AppHeader />
-    <route-view></route-view>
+    <router-view></router-view>
+
+
     <AppFooter />
   </div>
 </template>
