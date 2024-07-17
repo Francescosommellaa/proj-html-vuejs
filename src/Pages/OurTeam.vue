@@ -1,11 +1,16 @@
 <script>
+import AppCaroselCit from '../components/AppCaroselCit.vue';
+
 export default {
-    name: 'OurTeam'
+    name: 'OurTeam',
+    components: {
+        AppCaroselCit
+    }
 }
 </script>
 
 <template>
-    <h2>OurTeam</h2>
+    <AppCaroselCit />
 </template>
 
 <style lang="scss" scoped></style>
