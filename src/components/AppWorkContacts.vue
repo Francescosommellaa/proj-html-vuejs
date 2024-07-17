@@ -26,7 +26,7 @@ export default {
                         </div>
 
                         <div class="row justify-content-center ">
-                            <div class="col-1">
+                            <div class="col-2">
                                 <div class="ms_btn">
                                     contact
                                 </div>
@@ -48,7 +48,7 @@ export default {
 
 .ms_bg {
     background-image: url('..//..//public/h-2-background-1.jpg');
-    height: 600px;
+    height: 500px;
     padding: 80px;
     background-size: cover;
     object-position: center;
@@ -74,9 +74,10 @@ export default {
     .ms_btn{
         margin-top: 50px;
         background-color: $backgroud-color8;
-        padding: 10px 50px;  
+        padding: 10px 20px;  
         text-transform: uppercase;     
-        cursor:pointer;
+        cursor: pointer;
+        text-align:center;
     }
 }
 </style>
