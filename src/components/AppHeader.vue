@@ -5,8 +5,6 @@ export default {
 
 }
 
-
-
 </script>
 
 <template>
