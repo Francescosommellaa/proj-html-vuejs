@@ -15,20 +15,21 @@ export default {
 <template>
 
     <div class="row justify-content-center flex-nowrap">
-        <div class="col-auto mx-auto pb-4">
+        <div class="col-auto pb-4">
             <h2>Working <span>process</span></h2>
         </div>
     </div>
 
     <div class="row justify-content-center flex-nowrap mb-5">
-        <div class="col-7 ms_bg mx-auto">
+        <div class="col-10 ms_bg">
 
+            <div class="overlay"></div>
 
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-3">
                     <div class="text">
                         <i class="fa-regular fa-lightbulb"></i>
-                        <h4>First Theres </h4>
+                        <h5>First Theres </h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
                 </div>
@@ -36,7 +37,7 @@ export default {
                 <div class="col-3">
                     <div class="text">
                         <i class="fa-regular fa-comment"></i>
-                        <h4>Then we talk about </h4>
+                        <h5>Then we talk about</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
                 </div>
@@ -44,7 +45,7 @@ export default {
                 <div class="col-3">
                     <i class="fa-solid fa-cloud"></i>
                     <div class="text">
-                        <h4>And we think about </h4>
+                        <h5>And we think about </h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
                 </div>
@@ -52,16 +53,13 @@ export default {
                 <div class="col-3">
                     <i class="fa-solid fa-pen"></i>
                     <div class="text">
-                        <h4>So we draw along </h4>
+                        <h5>So we draw along </h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
 </template>
 
 <style lang="scss" scoped>
@@ -69,7 +67,8 @@ export default {
 @use '../styles/variabiles' as *;
 
 h2 {
-    font-size: 50px;
+    font-size: 70px;
+    margin: 2em 0 1em;
 
     span {
         font-weight: 800;
@@ -81,5 +80,62 @@ h2 {
     background-image: url('../../public/svg/svg-3.svg');
     background-position: top;
     background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 3em;
+    position: relative;
+
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    z-index: 0;
+    animation: slideRight 4s ease-in-out forwards;
+    }
+ 
+    h5 {
+        margin-top: 1em;
+        font-weight: 600;
+    }
+
+    i {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        font-size: 40px;
+        line-height: 140px;
+        background-color: $backgroud-color6;
+        opacity: 0;
+        animation: fadeIn ease-in-out 1s forwards;
+    }
+
+    .fa-lightbulb {
+        color: #BBDAC8;
+        animation-delay: 0.6s;
+    }
+    .fa-comment {
+        color: #F8D12D;
+        animation-delay: 1.2s;
+    }
+    .fa-cloud {
+        color: #80465F;
+        animation-delay: 1.8s;
+    }
+    .fa-pen {
+        color: #EB6A50;
+        animation-delay: 2.4s;
+    }
+
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+    @keyframes slideRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+    }
 }
 </style>
