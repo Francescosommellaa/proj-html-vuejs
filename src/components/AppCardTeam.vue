@@ -41,11 +41,6 @@ export default {
         bottom: 20px;
         padding: 1em 0.5em;;
         transition: left 0.5s ease;
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
     }
     
     &:hover .text{
