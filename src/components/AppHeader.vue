@@ -14,17 +14,17 @@ export default {
     <div class="d-flex align-items-center ">
       <div>
         <ul class="d-flex align-items-center">
-          <li class="ms-listlink">
+          <li class="ms-listlink ms-underline-fc3">
             <router-link :to="{ name: 'Home' }" class="nav-link">
               Home
             </router-link>
           </li>
-          <li class="ms-listlink">
+          <li class="ms-listlink ms-underline-fc1">
             <router-link :to="{ name: 'OurTeam' }" class="nav-link">
               OurTeam
             </router-link>
           </li>
-          <li class="ms-listlink">
+          <li class="ms-listlink ms-underline-fc2">
             <router-link :to="{ name: 'WhatWeOffer' }" class="nav-link">
               WhatWeOffer
             </router-link>
@@ -50,6 +50,7 @@ export default {
 
   .menu-header {
     height: 24px;
+    width: 24px;
   }
 }
 </style>
