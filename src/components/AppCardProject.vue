@@ -13,8 +13,8 @@ export default {
 
 <template>
 <div class="container-card d-flex flex-wrap">
-    <div v-for="(item, index) in store.illustrations" :key="index" class="card">
-        <img :src="item.pic" alt="Illustration" />
+    <div v-for="(item, index) in store.illustration" :key="index" class="card">
+        <img :src="item.pic" alt="illustration" />
         <div class="text">
             {{ item.title }}
         </div>
