@@ -9,6 +9,12 @@ import AppProgres from './components/AppProgres.vue';
 import AppCardOffer from './components/AppCardOffer.vue';
 
 
+
+
+
+
+
+
 export default {
   name: 'App',
   components: {
@@ -18,7 +24,9 @@ export default {
     AppWorkingProcess,
     AppWorkContacts,
     AppProgres,
-    AppCardOffer
+    AppCardOffer,
+
+
   },
   data() {
     return {
