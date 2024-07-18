@@ -22,7 +22,12 @@ export default {
     <AppCardProject/>
     <AppWorkingProcess />
     <AppWorkContacts />
-    <AppCardOffer />
+   <div class="row my-5 align-items-center justify-content-center">
+    <div class="col-8">
+        <AppCardOffer />
+    </div>
+   </div>
+   
 </template>
 
 <style lang="scss" scoped>

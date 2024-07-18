@@ -17,8 +17,8 @@ export default {
 
 <template>
     <AppCardTeam />
-    <AppCaroselCit />
     <AppAccording />
+    <AppCaroselCit />
     <AppCharacterDesign />
 
 </template>
