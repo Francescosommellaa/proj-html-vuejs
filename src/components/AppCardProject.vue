@@ -1,33 +1,33 @@
 <script>
-import { store } from '../store'
+import { store } from "../store";
 
 export default {
-    name: 'AppCardProject',
+    name: "AppCardProject",
     data() {
         return {
             store,
-        }
+        };
     },
-}
+};
 </script>
 
 <template>
-<div class="container-card d-flex flex-wrap">
-    <div v-for="(item, index) in store.illustration" :key="index" class="ms-card">
-        <img :src="item.pic" alt="illustration" />
-        <div class="text">
-            <a href="#">
-                <h2>{{ item.title }}</h2>
-                <em>{{ item.tip }}</em>
-            </a>
+    <div class="container-card d-flex flex-wrap">
+        <div v-for="(item, index) in store.illustration" :key="index" class="ms-card">
+            <img :src="item.pic" alt="illustration" />
+            <div class="text">
+                <a href="#">
+                    <h2>{{ item.title }}</h2>
+                    <em>{{ item.tip }}</em>
+                </a>
+            </div>
         </div>
     </div>
-</div>
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/general.scss';
-@use '../styles/variabiles' as *;
+@use "../styles/general.scss";
+@use "../styles/variabiles" as *;
 
 .ms-card {
     width: calc(100% / 3);
@@ -53,10 +53,9 @@ export default {
             width: 180px;
         }
     }
-    
-    &:hover .text{
+
+    &:hover .text {
         left: 0;
     }
 }
-
 </style>

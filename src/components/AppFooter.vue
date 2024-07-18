@@ -1,23 +1,19 @@
 <script>
-import { store } from '../store'
+import { store } from "../store";
 export default {
-  name: 'AppFooter',
+  name: "AppFooter",
   data() {
     return {
       store,
-    }
+    };
   },
-}
-
-
-
+};
 </script>
 
 <template>
-
   <div class="row ms-bg">
     <div class="col-3">
-      <img src="../../public/logo-sidearea-1.png" alt="logo footer">
+      <img src="../../public/logo-sidearea-1.png" alt="logo footer" />
       <h6>Let's Get Creative</h6>
     </div>
     <div class="col-3">
@@ -42,12 +38,11 @@ export default {
       </div>
     </div>
   </div>
-
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/general.scss';
-@use '../styles/variabiles' as *;
+@use "../styles/general.scss";
+@use "../styles/variabiles" as *;
 
 .ms-bg {
   background-color: $backgroud-color8;

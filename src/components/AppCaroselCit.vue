@@ -1,13 +1,12 @@
 <script>
 export default {
-    name: "AppCaroselCit"
-}
+    name: "AppCaroselCit",
+};
 </script>
 <template>
-
     <div class="row back">
         <div class="col-10 mx-auto vertical">
-            <div id="caroselcit" class="carousel slide " data-bs-ride="carousel">
+            <div id="caroselcit" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
                         <div class="d-block w-100 text-center">
@@ -39,12 +38,11 @@ export default {
             </div>
         </div>
     </div>
-
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/general.scss';
-@use '../styles/variabiles' as *;
+@use "../styles/general.scss";
+@use "../styles/variabiles" as *;
 
 .back {
     background-color: $backgroud-color10;
