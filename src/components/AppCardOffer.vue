@@ -11,7 +11,9 @@ export default {
                 <div class="col-4">
                     <a href="#">
                         <div class="card border border-0 position-relative ">
-                            <img class="card-img-top rounded-0" src="/public/h-2-blog-img-3.jpg" alt="Card image cap">
+                            <div class="ms-container-img">
+                                <img class="card-img-top rounded-0" src="/public/h-2-blog-img-3.jpg" alt="Card image cap">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Introduce Richard Laperrière of those amazing features</h5>
                                 <italic class="card-text">by Emily Fields/Illustration</italic>
@@ -26,7 +28,9 @@ export default {
                 <div class="col-4">
                     <a href="#">
                         <div class="card border border-0 position-relative">
-                            <img class=" card-img-top rounded-0" src="/public/h-2-blog-img-2.jpg" alt="Card image cap">
+                            <div class="ms-container-img">
+                                <img class="card-img-top rounded-0" src="/public/h-2-blog-img-2.jpg" alt="Card image cap">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">I try to give puople a different way of looking art</h5>
                                 <italic class="card-text">by Emily Fields/Illustration</italic>
@@ -41,7 +45,9 @@ export default {
                 <div class="col-4">
                     <a href="#">
                         <div class="card border border-0 position-relative">
-                            <img class=" card-img-top rounded-0" src="/public/h-2-blog-img-1.jpg" alt="Card image cap">
+                            <div class="ms-container-img">
+                                <img class="card-img-top rounded-0" src="/public/h-2-blog-img-1.jpg" alt="Card image cap">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title ">This way,loves:a detailed guide through new design</h5>
                                 <italic class="card-text ms-underline-fc2">by Emily Fields/ Art, Illustration</italic>
@@ -57,11 +63,6 @@ export default {
 
         </div>
     </div>
-
-
-
-
-
 </template>
 
 <style lang="scss" scoped>
@@ -71,6 +72,20 @@ export default {
 .row-card {
     display: flex;
     align-items: stretch;
+
+    .ms-container-img {
+        overflow: hidden;
+
+        img.card-img-top {
+            transition: transform 0.2s;
+            width: 100%;
+            height: auto;
+
+            &:hover {
+                transform: scale(1.2);
+            }       
+        }
+    }
 
     .box {
         position: absolute;
