@@ -20,7 +20,7 @@ export default {
     AppProgres,
     AppCardOffer,
     AppFooter,
-    // AppSideBar
+    AppSideBar
   },
   data() {
     return {
@@ -32,6 +32,8 @@ export default {
 
 <template>
   <div class="container-fluid">
+    <AppSideBar />
+
 
     <AppHeader />
     <router-view></router-view>
