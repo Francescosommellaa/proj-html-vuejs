@@ -3,53 +3,61 @@ export default {
     name: 'AppProgres',
     data() {
         return {
-            count: "0",
             areaWorks: [{
                 area: 'Animation',
-                percent: 50
+                percent: 50,
+                incris: 0,
             },
             {
                 area: 'Design',
-                percent: 60
-            }
-                ,
+                percent: 60,
+                incris: 0
+            },
             {
                 area: 'Lettering',
-                percent: 90
-            }
-                ,
+                percent: 90,
+                incris: 0
+            },
             {
                 area: 'Animation',
-                percent: 70
+                percent: 70,
+                incris: 0
             }
             ]
         }
     },
     methods: {
-        incrementCounter(max) {
-            const counterInterval = setInterval(incrementCounter, 1000);
-            this.count = 0;
-            if (this.count <= max) {
-                this.count++;
-            } else {
-                clearInterval(counterInterval);
-            }
+        incrementCounter(index) {
+            const targetPercent = this.areaWorks[index].percent;
+            this.areaWorks[index].currentPercent = 0;
+            const interval = setInterval(() => {
+                if (this.areaWorks[index].currentPercent < targetPercent) {
+                    this.areaWorks[index].currentPercent++;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 500);
         }
     },
+    mounted() {
+        this.areaWorks.forEach((work, index) => {
+            this.incrementCounter(index);
+        });
+    }
 
 }
 </script>
 
 <template>
-    <div v-for="work in this.areaWorks" class="row">
+    <div v-for="work in this.areaWorks" :key="index" class="row">
         <div class="col-12 mx-auto d-flex justify-content-between align-items-center">
             <h5>{{ work.area }}</h5>
-            <h6>{{ work.percent }}%</h6>
+            <h6>{{ work.currentPercent }}%</h6>
         </div>
         <div class="col-12 mx-auto ">
             <div class="progress" role="progressbar" aria-label="4px high" aria-valuenow="{{work.percent}} "
                 aria-valuemin="0" aria-valuemax="100" style="height: 4px;">
-                <div class="progress-bar" :style="{ width: work.percent + '%' }"></div>
+                <div class="progress-bar" :style="{ width: work.currentPercent + '%' }"></div>
             </div>
         </div>
     </div>
