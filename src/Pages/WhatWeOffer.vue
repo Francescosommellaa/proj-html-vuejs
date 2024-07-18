@@ -58,7 +58,7 @@ export default {
                     <h4>Subscribe to our <strong>newsletter</strong></h4>
                     <form class="d-flex" action="#">
                         <input type="email" name="mail" id="mail" placeholder="Your E-mail" />
-                        <input type="submit"class="ms_btn_secondary ms_btn_newsletter"/>
+                        <input type="submit" class="ms_btn_secondary ms_btn_newsletter" />
                     </form>
                 </div>
             </div>
