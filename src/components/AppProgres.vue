@@ -36,7 +36,7 @@ export default {
                 } else {
                     clearInterval(interval);
                 }
-            }, 500);
+            }, 100);
         }
     },
     mounted() {
