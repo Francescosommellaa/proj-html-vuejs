@@ -97,7 +97,6 @@ h2 {
         background-color: white;
         z-index: 0;
         animation: slideRight 4s ease-in forwards;
-
     }
 
     h5 {
