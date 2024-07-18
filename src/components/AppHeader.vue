@@ -1,7 +1,12 @@
 <script>
+import AppSideBar from './AppSideBar.vue';
+
 
 export default {
   name: 'AppHeader',
+  components:{
+    AppSideBar,
+  }
 
 }
 
@@ -31,8 +36,19 @@ export default {
           </li>
         </ul>
       </div>
-      <img class="menu-header" src="../../public/svg/svg-1.svg" alt="Logo Marèe">
+      <img class="menu-header" src="../../public/svg/svg-1.svg" alt="Logo Marèe" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+          <div class="offcanvas-body">
+            <AppSideBar/>
+          </div>
+      </div>
     </div>
+
+      
+    
   </nav>
 
 </template>
@@ -54,4 +70,6 @@ export default {
     margin-right: 4em;
   }
 }
+
+
 </style>
