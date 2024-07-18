@@ -1,5 +1,4 @@
 <script>
-import { send } from "vite";
 import AppCardOffer from "../components/AppCardOffer.vue";
 import AppProgres from "../components/AppProgres.vue";
 import AppTabs from "../components/AppTabs.vue";
@@ -51,14 +50,7 @@ export default {
         </div>
     </div>
 
-    <div class="row align-items-center justify-content-center">
-        <div class="col-10">
-            <AppCardOffer />
-        </div>
-    </div>
-
     <!-- sezione newsletter -->
-
     <div class="row align-items-center justify-content-center">
         <div class="col-10">
             <div class="row title align-items-center justify-content-center">
@@ -70,6 +62,13 @@ export default {
                     </form>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- sezione CardOffer-->
+    <div class="row align-items-center justify-content-center">
+        <div class="col-10">
+            <AppCardOffer />
         </div>
     </div>
 </template>
