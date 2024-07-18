@@ -6,7 +6,7 @@ export default {
 
 <template>
     <div class="row">
-        <div class="col-10 mx-auto">
+        <div class="col-12 ">
             <div class="row row-card pt-5">
                 <div class="col-4">
                     <a href="#">
@@ -21,7 +21,6 @@ export default {
                                 <div class="flag">May'19</div>
                             </div>
                         </div>
-
                     </a>
                 </div>
                 <div class="col-4">
@@ -37,7 +36,6 @@ export default {
                                 <div class="flag">May'19</div>
                             </div>
                         </div>
-
                     </a>
                 </div>
                 <div class="col-4">
@@ -53,7 +51,6 @@ export default {
                                 <div class="flag">May'19</div>
                             </div>
                         </div>
-
                     </a>
                 </div>
             </div>
@@ -78,7 +75,6 @@ export default {
     .box {
         position: absolute;
         height: 50px;
-
         background-color: $backgroud-color8;
         top: -4%;
         left: 7%;

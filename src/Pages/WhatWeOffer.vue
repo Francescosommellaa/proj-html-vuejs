@@ -17,18 +17,18 @@ export default {
 <template>
 
     <!-- titolo -->
-    
-        <div class="row align-items-center justify-content-center title">
-            <div class="col-2">
-                <h3>What we <span>offer</span> </h3>
-            </div>
-        </div>
-    
-    
 
-<!-- sezione animation -->
+    <div class="row align-items-center justify-content-center title">
+        <div class="col-12 text-center">
+            <h3>What we <strong>offer</strong> </h3>
+        </div>
+    </div>
+
+
+
+    <!-- sezione animation -->
     <div class="row px-3 mb-0 d-flex align-items-center justify-content-center">
-        <div class="col-3 mb-5">
+        <div class="col-6 mb-5">
             <img src="/public/h-2-port-img-6.jpg" alt="">
         </div>
         <div class="col-4 pt-5 ps-5 mb-5">
@@ -36,9 +36,10 @@ export default {
         </div>
     </div>
 
+
     <!-- sezione vibes loving -->
     <div class="row px-3  d-flex  align-items-center justify-content-center ">
-        <div class="col-3 pe-5">
+        <div class="col-4 pe-5">
             <h3>Vibes loving <strong>intro</strong></h3>
             <p>Mundi dolore molestie cu qui, duo homero accumsan eligendi cu. Id nam posse ocurreret disputando, ad
                 sed
@@ -48,38 +49,37 @@ export default {
                 Cum
                 sociis Theme natoque penatibus et magnis dis parturient montes, nascetur.</p>
         </div>
-       
-            <div class="col-4">
-                <AppProgres />
-            </div>
-      
-        
-        <div class="row align-items-center justify-content-center">
-            <div class="col-7">
-                <AppCardOffer />
-            </div>
+        <div class="col-6">
+            <AppProgres />
         </div>
-        
     </div>
-    
-    
+
+    <div class="row align-items-center justify-content-center ">
+        <div class="col-10 ">
+            <AppCardOffer />
+        </div>
+    </div>
+
+
+
+
 
     <!-- sezione newsletter -->
 
     <div class="row align-items-center justify-content-center">
-        <div class="col-7">
-            
-                <div class="row title align-items-center justify-content-center">
-                    <div class="col-6">
-                        <h4>Subscribe to our <span>newsletter</span></h4>
-                        <form action="#">
-                            <input type="email" name="mail" id="mail" placeholder="Your E-mail">
-                            <div class="ms_btn">send</div>
+        <div class="col-10">
 
-                        </form>
-                    </div>
+            <div class="row title align-items-center justify-content-center">
+                <div class="col-6">
+                    <h4>Subscribe to our <strong>newsletter</strong></h4>
+                    <form action="#">
+                        <input type="email" name="mail" id="mail" placeholder="Your E-mail">
+                        <div class="ms_btn">send</div>
+
+                    </form>
                 </div>
-            
+            </div>
+
         </div>
     </div>
 
@@ -90,7 +90,7 @@ export default {
 @use '../styles/general.scss';
 @use '../styles/variabiles' as *;
 
-.title{
+.title {
     background-image: url('../../public/h-2-background-1.jpg');
     height: 300px;
     margin-bottom: 3%;
@@ -103,53 +103,56 @@ img {
 
 }
 
-h3{
+h3 {
     font-size: 50px;
     font-weight: 500;
-    span{
+
+    span {
         font-family: italic;
         font-weight: 900;
     }
 
-    
+
 }
 
-h4{
+h4 {
     font-size: 40px;
     font-weight: 500;
     text-align: center;
-    span{
+
+    span {
         font-family: italic;
         font-weight: 900;
     }
 }
 
-#mail{
-    background-color: rgb(250, 247, 242) ;
+#mail {
+    background-color: rgb(250, 247, 242);
     border: 2px solid $border2;
     width: 70%;
     min-width: 200px;
     line-height: 30px;
     padding: 10px;
-  
+
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
     outline: none;
 }
 
 .ms_btn {
-       
-        background-color: $backgroud-color8;
-        width: calc(30% - 30px);
-        min-width: 100px;
-        padding: 10px 30px;
-        align-content: center;
-        text-align: center;
-        text-transform: uppercase;
-        cursor: pointer;
-        display: inline-block;
-        margin-left: 30px;
 
-    }
+    background-color: $backgroud-color8;
+    width: calc(30% - 30px);
+    min-width: 100px;
+    padding: 10px 30px;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 30px;
+
+}
 </style>

@@ -14,10 +14,8 @@ export default {
     <!-- sezione lavora con noi -->
     <section>
 
-        <div class="row mx--0 ms_bg align-items-center">
-
+        <div class="row row-cols-1 mx--0 ms_bg align-items-center p-5 ">
             <div class="col-12">
-
                 <div class="row justify-content-center">
                     <div class="col-8 ">
                         <h2>Want to work with us? Send us <span>a message!</span></h2>
@@ -26,15 +24,11 @@ export default {
                             Enim nesciunt animi vel nisi doloribus?</p>
                     </div>
                 </div>
-
-                <div class="row justify-content-center ">
-                    <div class="col-1">
-                        <div class="text-center ms_btn">
-                            contact
-                        </div>
-                    </div>
+                <div class="col-1 mx-auto">
+                    <button class="text-center ms_btn border-0">
+                        contact
+                    </button>
                 </div>
-
             </div>
         </div>
 
@@ -50,7 +44,6 @@ export default {
 
 .ms_bg {
     background-image: url('..//..//public/h-2-background-1.jpg');
-    padding: 80px;
     background-size: cover;
     object-position: center;
     background-repeat: no-repeat;
