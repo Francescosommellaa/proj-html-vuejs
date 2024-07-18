@@ -41,7 +41,8 @@ export default {
 
                         <div class="col-5 mx-auto text-start p-5">
                             <h1 class="display-3 slidetext title-start">Pojects made</h1>
-                            <h1 class="display-3 slidetext title-end"> whith <strong>Love</strong></h1>
+                            <h1 class="display-3 slidetext title-end"> whith <strong class="fw-bolder">Love</strong>
+                            </h1>
                             <p class="slidetext subtitle-start">Lorem, ipsum dolor sit amet consectetur adipisicing
                                 elit.
                                 Eos
@@ -59,7 +60,8 @@ export default {
 
                         <div class="col-5 mx-auto text-start p-5">
                             <h1 class="display-3 slidetext title-start">Our new folio</h1>
-                            <h1 class="display-3 slidetext title-end">full of <strong>joy</strong></h1>
+                            <h1 class="display-3 slidetext title-end">full of <strong class="fw-bolder">Joy</strong>
+                            </h1>
                             <p class="slidetext subtitle-start">Lorem, ipsum dolor sit amet consectetur adipisicing
                                 elit.
                                 Eos
@@ -76,7 +78,8 @@ export default {
                     <div class="row">
                         <div class="col-5 mx-auto text-start p-5">
                             <h1 class="display-3 slidetext title-start">evotion get </h1>
-                            <h1 class="display-3 slidetext title-end"> never <strong>ends</strong></h1>
+                            <h1 class="display-3 slidetext title-end"> never <strong class="fw-bolder">Ends</strong>
+                            </h1>
                             <p class="slidetext subtitle-start">Lorem, ipsum dolor sit amet consectetur adipisicing
                                 elit.
                                 Eos
