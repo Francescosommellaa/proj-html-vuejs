@@ -17,12 +17,19 @@ export default {
 
 <template>
     <AppCardTeam />
-    <AppAccording />
+    <div class="row p-5">
+        <div class="col-5 ms-auto">
+            <AppAccording />
+        </div>
+        <div class="col-5 me-auto"></div>
+    </div>
+
     <AppCaroselCit />
-    <AppCharacterDesign />
+    <dic class="col-10 ">
+        <AppCharacterDesign />
+    </dic>
+
 
 </template>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
