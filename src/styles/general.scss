@@ -88,3 +88,19 @@ img {
         color: white;
     }
 }
+
+.ms_btn_secondary {
+    text-transform: uppercase;
+    border: 3px solid $border4;
+    width: fit-content;
+    padding: 1.2em 3em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.8s ease;
+    background-color: $backgroud-color8;
+
+    &:hover {
+        box-shadow: 0 0 0 5vw $border4 inset;
+        color: white;
+    }
+}

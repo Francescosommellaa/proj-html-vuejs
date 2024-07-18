@@ -1,4 +1,5 @@
 <script>
+import { send } from "vite";
 import AppCardOffer from "../components/AppCardOffer.vue";
 import AppProgres from "../components/AppProgres.vue";
 import AppTabs from "../components/AppTabs.vue";
@@ -65,7 +66,7 @@ export default {
                     <h4>Subscribe to our <strong>newsletter</strong></h4>
                     <form action="#">
                         <input type="email" name="mail" id="mail" placeholder="Your E-mail" />
-                        <div class="ms_btn">send</div>
+                        <input type="submit"class="ms_btn_secondary ms_btn_newsletter"/>
                     </form>
                 </div>
             </div>
@@ -123,15 +124,7 @@ input:focus {
     outline: none;
 }
 
-.ms_btn {
-    background-color: $backgroud-color8;
-    width: calc(30% - 30px);
-    min-width: 100px;
-    padding: 10px 30px;
-    align-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
+.ms_btn_newsletter {
     display: inline-block;
     margin-left: 30px;
 }
