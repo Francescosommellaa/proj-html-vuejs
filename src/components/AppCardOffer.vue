@@ -89,15 +89,25 @@ export default {
 
     .box {
         position: absolute;
-        height: 50px;
-        background-color: $backgroud-color8;
+        height: 60px;
         top: -4%;
         left: 7%;
         z-index: 1;
 
+        .text-center {
+            background-color: $backgroud-color8;
+            font-size: 24px;
+            padding: 0 0 0.2em 0;
+            font-weight: 800;
+        }
+
         .flag {
-            background-color: $backgroud-color10;
+            background-color: $backgroud-color9;
             margin-bottom: 0;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 70%, 0 100%);
+            font-size: 12px;
+            padding: 0.4em 0.6em 1em;
+            font-weight: 500;
         }
     }
 }
