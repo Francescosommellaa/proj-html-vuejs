@@ -17,7 +17,7 @@ export default {
                     <div class="carousel-item" data-bs-interval="1000">
                         <div class="d-block w-100 text-center">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <h4>Lara Colins</h4>
+                            <h4>Akiko Rector</h4>
                         </div>
                     </div>
                     <div class="carousel-item">

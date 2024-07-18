@@ -1,4 +1,5 @@
 <script>
+import { bottom } from "@popperjs/core";
 import { store } from "../store";
 
 export default {
@@ -12,17 +13,16 @@ export default {
 </script>
 
 <template>
-    <div class="row justify-content-center align-items-center m-5">
-        <div class="col-6 ms-auto">
+    <div class="row row-cols-2 p-5 justify-content-center align-items-center ">
+        <div class="col">
             <img src="../../public/team-single-img-1.jpg" alt="foto team" />
         </div>
-
-        <div class="col-4 me-auto">
+        <div class="col">
             <h3>Character <span>design</span></h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium .
             </p>
-            <div class="ms_btn">read more</div>
+            <buttom class="ms_btn">read more</buttom>
         </div>
     </div>
 </template>
