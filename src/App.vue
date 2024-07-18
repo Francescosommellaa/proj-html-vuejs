@@ -7,12 +7,7 @@ import AppWorkContacts from './components/AppWorkContacts.vue';
 import { store } from './store';
 import AppProgres from './components/AppProgres.vue';
 import AppCardOffer from './components/AppCardOffer.vue';
-
-
-
-
-
-
+import AppSideBar from './components/AppSideBar.vue';
 
 
 export default {
@@ -25,6 +20,7 @@ export default {
     AppProgres,
     AppCardOffer,
     AppFooter,
+    // AppSideBar
   },
   data() {
     return {

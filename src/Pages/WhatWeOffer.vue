@@ -128,6 +128,7 @@ h4{
     background-color: rgb(250, 247, 242) ;
     border: 2px solid $border2;
     width: 70%;
+    min-width: 200px;
     line-height: 30px;
     padding: 10px;
   
@@ -140,8 +141,9 @@ textarea:focus, input:focus{
 .ms_btn {
        
         background-color: $backgroud-color8;
-        width: fit-content;
-        padding: 10px 50px;
+        width: calc(30% - 30px);
+        min-width: 100px;
+        padding: 10px 30px;
         align-content: center;
         text-align: center;
         text-transform: uppercase;
