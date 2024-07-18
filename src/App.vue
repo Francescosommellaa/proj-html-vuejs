@@ -8,6 +8,7 @@ import { store } from './store';
 import AppProgres from './components/AppProgres.vue';
 import AppCardOffer from './components/AppCardOffer.vue';
 import AppSideBar from './components/AppSideBar.vue';
+import AppSideNav from './components/AppSideNav.vue';
 
 
 export default {
@@ -20,7 +21,8 @@ export default {
     AppProgres,
     AppCardOffer,
     AppFooter,
-    AppSideBar
+    AppSideBar,
+    AppSideNav
   },
   data() {
     return {
@@ -33,6 +35,8 @@ export default {
 <template>
   <div class="container-fluid">
     <!-- <AppSideBar /> -->
+    
+    <div class="position"><AppSideNav/></div>
 
 
     <AppHeader />
@@ -51,5 +55,10 @@ export default {
 // --cursor-size: 2px;
 // }
 
-
+.position{
+  position: absolute;
+  top: 0;
+  width: 100vh;
+  height: 100vh;
+}
 </style>
