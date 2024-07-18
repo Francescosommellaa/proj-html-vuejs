@@ -49,8 +49,8 @@ export default {
                             <p class="slidetext subtitle-end">
                                 esse et fugit minus libero in error? Maxime libero odio
                             </p>
-                            <button type="button" class="slidetext slider-btn btn btn-outline-primary">
-                                <a href="#">Read More</a>
+                            <button type="button" class="slidetext slider-btn ms_btn">
+                                Read More
                             </button>
                         </div>
                         <div class="col-5">
@@ -72,8 +72,8 @@ export default {
                             <p class="slidetext subtitle-end">
                                 esse et fugit minus libero in error? Maxime libero odio
                             </p>
-                            <button type="button" class="slidetext slider-btn btn btn-outline-primary">
-                                <a href="#">Read More</a>
+                            <button type="button" class="slidetext slider-btn ms_btn">
+                                Read More
                             </button>
                         </div>
                         <div class="col-5">
@@ -95,8 +95,8 @@ export default {
                             <p class="slidetext subtitle-end">
                                 esse et fugit minus libero in error? Maxime libero odio
                             </p>
-                            <button type="button" class="slidetext slider-btn btn btn-outline-primary">
-                                <a href="#">Read More</a>
+                            <button type="button" class="ms_btn slidetext slider-btn">
+                                Read More
                             </button>
                         </div>
                         <div class="col-5 ms-0">
@@ -124,12 +124,7 @@ export default {
 @use "../styles/variabiles" as *;
 
 #Carosel {
-    height: 70vh;
-
-    p,
-    h1 {}
-
-    img {}
+    height: 100%;
 }
 
 .carousel-indicators {

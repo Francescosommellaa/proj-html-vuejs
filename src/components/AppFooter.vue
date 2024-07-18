@@ -1,13 +1,9 @@
 <script>
-import { store } from "../store";
+
 export default {
   name: "AppFooter",
-  data() {
-    return {
-      store,
-    };
-  },
 };
+
 </script>
 
 <template>
@@ -18,14 +14,14 @@ export default {
     </div>
     <div class="col-3">
       <ul class="d-flex flex-column">
-        <li class="ms-listlink ms-underline-fc3">maree@qodeinteractive.com</li>
-        <li class="ms-listlink ms-underline-fc3">+44645 321 789</li>
+        <li class="ms-listlink ms-underline fc3">maree@qodeinteractive.com</li>
+        <li class="ms-listlink ms-underline fc3">+44645 321 789</li>
       </ul>
     </div>
     <div class="col-3">
       <ul class="d-flex flex-column">
-        <li class="ms-listlink ms-underline-fc3">Avenue d'Audeghem 10</li>
-        <li class="ms-listlink ms-underline-fc3">1040 Brusless, Belgium</li>
+        <li class="ms-listlink ms-underline fc3">Avenue d'Audeghem 10</li>
+        <li class="ms-listlink ms-underline fc3">1040 Brusless, Belgium</li>
       </ul>
     </div>
     <div class="col-3 ms-icon-container">
