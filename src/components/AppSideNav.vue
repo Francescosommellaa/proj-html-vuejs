@@ -11,9 +11,11 @@ export default {
 </script>
 
 <template>
-    <div class="arrow">
-        <i class="fa-solid fa-arrow-up"></i>
-    </div>
+    <a href="#anchor">
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </a>
 </template>
 
 <style lang="scss" scoped>
