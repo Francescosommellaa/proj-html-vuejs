@@ -16,10 +16,10 @@ export default {
                                     alt="Card image cap" />
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title ms-underline fc1">
+                                <h5 class="card-title ">
                                     Introduce Richard Laperrière of those amazing features
                                 </h5>
-                                <italic class="card-text">by Emily Fields/Illustration</italic>
+                                <italic class="card-text ms-underline fc1">by Emily Fields/Illustration</italic>
                             </div>
                             <div class="box">
                                 <div class="text-center">07</div>
@@ -39,7 +39,7 @@ export default {
                                 <h5 class="card-title">
                                     I try to give puople a different way of looking art
                                 </h5>
-                                <italic class="card-text">by Emily Fields/Illustration</italic>
+                                <italic class="card-text ms-underline fc1">by Emily Fields/Illustration</italic>
                             </div>
                             <div class="box">
                                 <div class="text-center">07</div>
@@ -56,10 +56,10 @@ export default {
                                     alt="Card image cap" />
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">
+                                <h5 class="card-title ">
                                     This way,loves:a detailed guide through new design
                                 </h5>
-                                <italic class="card-text">by Emily Fields/ Art, Illustration</italic>
+                                <italic class="card-text ms-underline fc1">by Emily Fields/ Art, Illustration</italic>
                             </div>
                             <div class="box">
                                 <div class="text-center">07</div>
@@ -118,5 +118,49 @@ export default {
             font-weight: 500;
         }
     }
+}
+
+:root {
+    --underline-fc1-bg: #badac9;
+    --underline-fc2-bg: #eb6950;
+    --underline-fc3-bg: #f0817b;
+}
+
+.fc1 {
+    --underline-bg: var(--underline-fc1-bg);
+}
+
+.fc2 {
+    --underline-bg: var(--underline-fc2-bg);
+}
+
+.fc3 {
+    --underline-bg: var(--underline-fc3-bg);
+}
+
+.ms-underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.ms-underline:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 5px;
+    height: 8px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background-color: var(--underline-bg);
+}
+
+.ms-underline:hover:after,
+.ms-underline:focus:after,
+.ms-underline:active:after {
+    right: 0;
 }
 </style>
