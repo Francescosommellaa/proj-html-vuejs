@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <a href="#anchor">
+    <a href="#anchor"> 
         <div class="arrow">
             <i class="fa-solid fa-arrow-up"></i>
         </div>
