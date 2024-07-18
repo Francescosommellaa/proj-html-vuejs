@@ -4,7 +4,7 @@ import AppSideBar from './AppSideBar.vue';
 
 export default {
   name: 'AppHeader',
-  components:{
+  components: {
     AppSideBar,
   }
 
@@ -21,36 +21,37 @@ export default {
     <div class="d-flex align-items-center">
       <div>
         <ul class="d-flex align-items-center">
-          <li class="ms-listlink ms-underline-fc3">
+          <li class="ms-listlink ms-underline fc3">
             <router-link :to="{ name: 'Home' }" class="nav-link">
               Home
             </router-link>
           </li>
-          <li class="ms-listlink ms-underline-fc1">
+          <li class="ms-listlink ms-underline fc1">
             <router-link :to="{ name: 'OurTeam' }" class="nav-link">
               OurTeam
             </router-link>
           </li>
-          <li class="ms-listlink ms-underline-fc2">
+          <li class="ms-listlink ms-underline fc2">
             <router-link :to="{ name: 'WhatWeOffer' }" class="nav-link">
               WhatWeOffer
             </router-link>
           </li>
         </ul>
       </div>
-      <img class="menu-header" src="../../public/svg/svg-1.svg" alt="Logo Marèe" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-          <div class="offcanvas-body">
-            <AppSideBar/>
-          </div>
+      <img class="menu-header" src="../../public/svg/svg-1.svg" alt="Logo Marèe" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <AppSideBar />
+        </div>
       </div>
     </div>
 
-      
-    
+
+
   </nav>
 
 </template>
@@ -72,6 +73,4 @@ export default {
     margin-right: 4em;
   }
 }
-
-
 </style>
