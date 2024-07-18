@@ -19,7 +19,7 @@
 }
 
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -40,15 +40,18 @@ img {
     --underline-fc2-bg: #EB6950;
     --underline-fc3-bg: #F0817B;
 }
-.fc1 { 
+
+.fc1 {
     --underline-bg: var(--underline-fc1-bg);
- }
-  .fc2 {
-     --underline-bg: var(--underline-fc2-bg); 
-    }
-  .fc3 { 
+}
+
+.fc2 {
+    --underline-bg: var(--underline-fc2-bg);
+}
+
+.fc3 {
     --underline-bg: var(--underline-fc3-bg);
- }
+}
 
 .ms-underline {
     display: inline;
@@ -75,80 +78,3 @@ img {
         right: 0;
     }
 }
-/* .ms-underline-fc1 {
-    display: inline;
-    position: relative;
-    overflow: hidden;
-
-    :after {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        right: 100%;
-        bottom: 5px;
-        height: 8px;
-        transition-property: left right;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
-        background-color: #BADAC9;
-    }
-
-    :hover:after,
-    :focus:after,
-    :active:after {
-        right: 0;
-    }
-}
-
-.ms-underline-fc2 {
-    display: inline;
-    position: relative;
-    overflow: hidden;
-
-    :after {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        right: 100%;
-        bottom: 5px;
-        height: 8px;
-        transition-property: left right;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
-        background: #EB6950;
-    }
-
-    :hover:after,
-    :focus:after,
-    :active:after {
-        right: 0;
-    }
-}
-
-.ms-underline-fc3 {
-    display: inline;
-    position: relative;
-    overflow: hidden;
-
-    :after {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        right: 100%;
-        bottom: 5px;
-        height: 8px;
-        transition-property: left right;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
-        background: #F0817B;
-    }
-
-    :hover:after,
-    :focus:after,
-    :active:after {
-        right: 0;
-    }
-} */
