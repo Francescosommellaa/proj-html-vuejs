@@ -56,7 +56,7 @@ export default {
             <div class="row title align-items-center justify-content-center">
                 <div class="col-6">
                     <h4>Subscribe to our <strong>newsletter</strong></h4>
-                    <form action="#">
+                    <form class="d-flex" action="#">
                         <input type="email" name="mail" id="mail" placeholder="Your E-mail" />
                         <input type="submit" class="ms_btn_secondary ms_btn_newsletter" />
                     </form>
@@ -124,7 +124,6 @@ input:focus {
 }
 
 .ms_btn_newsletter {
-    display: inline-block;
     margin-left: 30px;
 }
 </style>

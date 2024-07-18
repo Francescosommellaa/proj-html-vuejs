@@ -107,12 +107,16 @@ export default {
             </div>
             <button @click="reloadAnimations" class="carousel-control-prev" type="button" data-bs-target="#Carosel"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <div class="ms-prev-icon">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </div>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button @click="reloadAnimations" class="carousel-control-next" type="button" data-bs-target="#Carosel"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <div class="ms-prev-icon">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </div>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
@@ -134,6 +138,8 @@ export default {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(100%);
+    height: 18px;
+    color: white;
 }
 
 .carousel-control-prev {
@@ -163,6 +169,16 @@ export default {
 
 .slider-btn {
     animation-delay: 1.2s;
+}
+
+.ms-prev-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: $backgroud-color10;
 }
 
 @keyframes showText {
