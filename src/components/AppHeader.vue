@@ -15,7 +15,9 @@ export default {
 <template>
 
   <nav class="navbar">
-    <img class="logo-header" src="../../public/logo-sidearea-1-1.png" alt="Logo Marèe">
+    <router-link :to="{ name: 'Home' }" class="nav-link">
+      <img class="logo-header" src="../../public/logo-sidearea-1-1.png" alt="Logo Marèe">
+    </router-link>
     <div class="d-flex align-items-center">
       <div>
         <ul class="d-flex align-items-center">
