@@ -21,7 +21,7 @@ export default {
     </div>
 
     <div class="row justify-content-center flex-nowrap mb-5">
-        <div class="col-10 ms_bg">
+        <div class="col-10 ms_bg ">
 
             <div class="overlay"></div>
 
@@ -76,6 +76,10 @@ h2 {
     }
 }
 
+.col-10 {
+    overflow-x: hidden;
+}
+
 .ms_bg {
     background-image: url('../../public/svg/svg-3.svg');
     background-position: top;
@@ -85,16 +89,17 @@ h2 {
     position: relative;
 
     .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background-color: white;
-    z-index: 0;
-    animation: slideRight 4s ease-in forwards;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: white;
+        z-index: 0;
+        animation: slideRight 4s ease-in forwards;
+
     }
- 
+
     h5 {
         margin-top: 1em;
         font-weight: 600;
@@ -112,30 +117,43 @@ h2 {
     }
 
     .fa-lightbulb {
-        color: #BBDAC8;
+        color: $text-colors4;
         animation-delay: 0.6s;
     }
+
     .fa-comment {
-        color: #F8D12D;
+        color: $text-colors3;
         animation-delay: 1.2s;
     }
+
     .fa-cloud {
-        color: #80465F;
+        color: $text-colors9;
         animation-delay: 1.8s;
     }
+
     .fa-pen {
-        color: #EB6A50;
+        color: $text-colors6;
         animation-delay: 2.4s;
     }
 
     @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 
     @keyframes slideRight {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(100%); }
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
     }
 }
 </style>
