@@ -36,7 +36,7 @@ export default {
             <div @click="(according.value == false ? according.value = true : according.value = false)"
                 class="d-flex justify-content-between">
                 <h6>{{ according.title }}</h6>
-                <i class="fa-solid fa-plus" :class="(according.value == true ? rotate - 45)"></i>
+                <i class="fa-solid fa-plus"></i>
             </div>
             <div v-show="(according.value != false)">
                 <p>{{ according.text }}</p>
