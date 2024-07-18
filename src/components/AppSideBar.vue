@@ -12,12 +12,7 @@
 </script>
 
 <template>
-<div class="ms_container">
-    <div class="ms_colsx"></div>
-    <div class="ms_coldx">
-        <div id="ex">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
+
         <div id="logo">
             <a href="#"><img src="../../public/logo-sidearea-1-1.png" alt="logo marèe"></a>
         </div>
@@ -33,9 +28,9 @@
             <input type="text" placeholder="Enter your Keyword...">
         </form>
 
-    </div>
+    
 
-</div>
+
 
 
 </template>
@@ -43,35 +38,16 @@
 <style lang="scss" scoped>
     @use '../styles/general.scss';
     @use '../styles/variabiles' as *;
+*{
+    text-align: center;
+}
+    #logo{
+        margin-bottom:50px ;
+    }
 
-    .ms_container{
-        height: 100vh;
-        width: 100%;
-        position: fixed;
-        right: 0;
-        z-index: 500;
-        display: flex;
-
-     
-        .ms_colsx{
-            width: 85%;
-               // debug
-            background-color: black;
-        }
-
-        .ms_coldx{
-            width: 15%;
-            padding: 20px;
-            background-color: white;
-            #ex{
-                text-align: right;
-                font-size: 40px;
-                margin-top: 0;
-            }
-            &>*{
-                margin-top: 50px;
-            }
-
+    p{
+        color: $text-colors5;
+    }
             .ms_cont_social{
                 text-align: center;
                 & >*{
@@ -91,6 +67,8 @@
             }   
 
             input{
+                text-align: left;
+                margin-top: 100px;
                 border: none;
                 border-bottom: 3px solid $border4;
                 width:100%;
@@ -100,6 +78,6 @@
                 
             }
             
-        }
-    }
+        
+    
 </style>
