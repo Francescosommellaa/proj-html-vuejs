@@ -26,8 +26,8 @@ export default {
     background-color: $backgroud-color8;
     width: fit-content;
     cursor: pointer;
-    padding: 30px;
-    font-size: 30px;
+    padding: 20px;
+    font-size: 20px;
     position: fixed;
     bottom: 10px;
     right: 20px;
