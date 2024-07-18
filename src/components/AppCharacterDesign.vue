@@ -54,13 +54,14 @@ export default {
     //         box-shadow: 0 0 0 5vw $border4 inset;
     //         color: white;
     //     }
-    // }
+}
 
-    h3 {
-        font-size: 3rem;
+h3 {
+    font-size: 3rem;
 
-        span {
-            font-family: italic;
-            font-weight: 900;
-        }
-    }</style>
+    span {
+        font-family: italic;
+        font-weight: 900;
+    }
+}
+</style>
