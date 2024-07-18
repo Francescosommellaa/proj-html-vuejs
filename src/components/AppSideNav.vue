@@ -1,11 +1,11 @@
 <script>
-import { store } from '../store'
+import { store } from "../store";
 export default {
-    name: 'AppSideNav',
+    name: "AppSideNav",
     data() {
         return {
             store,
-        }
+        };
     },
 };
 </script>
@@ -19,10 +19,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/general.scss';
-@use '../styles/variabiles' as *;
+@use "../styles/general.scss";
+@use "../styles/variabiles" as *;
 
-.arrow{
+.arrow {
     background-color: $backgroud-color8;
     width: fit-content;
     cursor: pointer;
@@ -34,7 +34,5 @@ export default {
     color: white;
     z-index: 500;
     // bottom: 10px;
-    
 }
-
 </style>

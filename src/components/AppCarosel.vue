@@ -1,12 +1,12 @@
 <script>
-import { store } from '../store'
+import { store } from "../store";
 export default {
-    name: 'AppCarosel',
+    name: "AppCarosel",
     data() {
         return {
             store,
             texts: 'document.querySelectorAll(".slidetext")',
-        }
+        };
     },
     methods: {
         reloadAnimations() {
@@ -17,90 +17,102 @@ export default {
             /* refresh gift */
             const gift = document.querySelectorAll(".magic");
             gift.forEach((magicGif) => {
-                magicGif.src = magicGif.getAttribute('src');
+                magicGif.src = magicGif.getAttribute("src");
             });
         },
     },
-}
-
+};
 </script>
 <template>
     <div id="Carosel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators m-auto  ">
-            <button type="button" data-bs-target="#Carosel" data-bs-slide-to="0" class="active bg bg-dark "
+        <div class="carousel-indicators m-auto">
+            <button type="button" data-bs-target="#Carosel" data-bs-slide-to="0" class="active bg bg-dark"
                 aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#Carosel" data-bs-slide-to="1" aria-label="Slide 2"
-                class="btn bg bg-dark "></button>
+                class="btn bg bg-dark"></button>
             <button type="button" data-bs-target="#Carosel" data-bs-slide-to="2" aria-label="Slide 3"
-                class="btn bg bg-dark  "></button>
+                class="btn bg bg-dark"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
                     <div class="row">
-
                         <div class="col-5 mx-auto text-start p-5">
                             <h1 class="display-3 slidetext title-start">Pojects made</h1>
-                            <h1 class="display-3 slidetext title-end"> whith <strong class="fw-bolder">Love</strong>
+                            <h1 class="display-3 slidetext title-end">
+                                whith <strong class="fw-bolder">Love</strong>
                             </h1>
-                            <p class="slidetext subtitle-start">Lorem, ipsum dolor sit amet consectetur adipisicing
-                                elit.
-                                Eos
-                                accusamus alias </p>
-                            <p class="slidetext subtitle-end"> esse et fugit minus libero in error? Maxime libero odio
+                            <p class="slidetext subtitle-start">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+                                accusamus alias
                             </p>
-                            <button type="button" class="slidetext slider-btn btn btn-outline-primary"><a href="#">Read
-                                    More</a></button>
+                            <p class="slidetext subtitle-end">
+                                esse et fugit minus libero in error? Maxime libero odio
+                            </p>
+                            <button type="button" class="slidetext slider-btn btn btn-outline-primary">
+                                <a href="#">Read More</a>
+                            </button>
                         </div>
-                        <div class="col-5"> <img class="magic" src="/public/magic01.gif" alt="..."></div>
+                        <div class="col-5">
+                            <img class="magic" src="/public/magic01.gif" alt="..." />
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
                     <div class="row">
-
                         <div class="col-5 mx-auto text-start p-5">
                             <h1 class="display-3 slidetext title-start">Our new folio</h1>
-                            <h1 class="display-3 slidetext title-end">full of <strong class="fw-bolder">Joy</strong>
+                            <h1 class="display-3 slidetext title-end">
+                                full of <strong class="fw-bolder">Joy</strong>
                             </h1>
-                            <p class="slidetext subtitle-start">Lorem, ipsum dolor sit amet consectetur adipisicing
-                                elit.
-                                Eos
-                                accusamus alias </p>
-                            <p class="slidetext subtitle-end"> esse et fugit minus libero in error? Maxime libero odio
+                            <p class="slidetext subtitle-start">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+                                accusamus alias
                             </p>
-                            <button type="button" class="slidetext slider-btn btn btn-outline-primary"><a href="#">Read
-                                    More</a></button>
+                            <p class="slidetext subtitle-end">
+                                esse et fugit minus libero in error? Maxime libero odio
+                            </p>
+                            <button type="button" class="slidetext slider-btn btn btn-outline-primary">
+                                <a href="#">Read More</a>
+                            </button>
                         </div>
-                        <div class="col-5"> <img class="magic" src="/public/magic02.gif" alt="..."></div>
+                        <div class="col-5">
+                            <img class="magic" src="/public/magic02.gif" alt="..." />
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
                     <div class="row">
                         <div class="col-5 mx-auto text-start p-5">
-                            <h1 class="display-3 slidetext title-start">evotion get </h1>
-                            <h1 class="display-3 slidetext title-end"> never <strong class="fw-bolder">Ends</strong>
+                            <h1 class="display-3 slidetext title-start">Evotion get</h1>
+                            <h1 class="display-3 slidetext title-end">
+                                never <strong class="fw-bolder">Ends</strong>
                             </h1>
-                            <p class="slidetext subtitle-start">Lorem, ipsum dolor sit amet consectetur adipisicing
-                                elit.
-                                Eos
-                                accusamus alias </p>
-                            <p class="slidetext subtitle-end"> esse et fugit minus libero in error? Maxime libero odio
+                            <p class="slidetext subtitle-start">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+                                accusamus alias
                             </p>
-                            <button type="button" class="slidetext slider-btn btn btn-outline-primary"><a href="#">Read
-                                    More</a></button>
+                            <p class="slidetext subtitle-end">
+                                esse et fugit minus libero in error? Maxime libero odio
+                            </p>
+                            <button type="button" class="slidetext slider-btn btn btn-outline-primary">
+                                <a href="#">Read More</a>
+                            </button>
                         </div>
-                        <div class="col-5 ms-0"> <img class="magic" src="/public/magic03.gif" alt="..."></div>
+                        <div class="col-5 ms-0">
+                            <img class="magic" src="/public/magic03.gif" alt="..." />
+                        </div>
                     </div>
                 </div>
             </div>
             <button @click="reloadAnimations" class="carousel-control-prev" type="button" data-bs-target="#Carosel"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button @click="reloadAnimations" class="carousel-control-next" type="button" data-bs-target="#Carosel"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
@@ -108,8 +120,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/general.scss';
-@use '../styles/variabiles' as *;
+@use "../styles/general.scss";
+@use "../styles/variabiles" as *;
 
 #Carosel {
     height: 70vh;
@@ -141,8 +153,6 @@ export default {
     animation-name: showText;
     animation-duration: 2s;
 }
-
-
 
 .title-end {
     animation-delay: 0.4s;

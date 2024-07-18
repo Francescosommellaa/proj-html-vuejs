@@ -1,11 +1,11 @@
 <script>
-import { store } from '../store'
+import { store } from "../store";
 export default {
-    name: 'AppWorkContacts',
+    name: "AppWorkContacts",
     data() {
         return {
             store,
-        }
+        };
     },
 };
 </script>
@@ -13,37 +13,33 @@ export default {
 <template>
     <!-- sezione lavora con noi -->
     <section>
-
-        <div class="row row-cols-1 mx--0 ms_bg align-items-center p-5 ">
+        <div class="row row-cols-1 mx--0 ms_bg align-items-center p-5">
             <div class="col-12">
                 <div class="row justify-content-center">
-                    <div class="col-8 ">
+                    <div class="col-8">
                         <h2>Want to work with us? Send us <span>a message!</span></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nobis architecto
-                            mollitia repellat aut at, ad facere deserunt illo veritatis consectetur eveniet magni fuga!
-                            Enim nesciunt animi vel nisi doloribus?</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequatur nobis architecto mollitia repellat aut at, ad facere
+                            deserunt illo veritatis consectetur eveniet magni fuga! Enim
+                            nesciunt animi vel nisi doloribus?
+                        </p>
                     </div>
                 </div>
                 <div class="col-1 mx-auto">
-                    <button class="text-center ms_btn border-0">
-                        contact
-                    </button>
+                    <button class="text-center ms_btn border-0">contact</button>
                 </div>
             </div>
         </div>
-
-
-
     </section>
-
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/general.scss';
-@use '../styles/variabiles' as *;
+@use "../styles/general.scss";
+@use "../styles/variabiles" as *;
 
 .ms_bg {
-    background-image: url('..//..//public/h-2-background-1.jpg');
+    background-image: url("..//..//public/h-2-background-1.jpg");
     background-size: cover;
     object-position: center;
     background-repeat: no-repeat;

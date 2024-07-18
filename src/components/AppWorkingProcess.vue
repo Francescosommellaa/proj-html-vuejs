@@ -1,19 +1,17 @@
 <script>
-import { store } from '../store'
+import { store } from "../store";
 
 export default {
-    name: 'AppWorkingProcess',
+    name: "AppWorkingProcess",
     data() {
         return {
             store,
-        }
+        };
     },
-}
-
+};
 </script>
 
 <template>
-
     <div class="row justify-content-center flex-nowrap">
         <div class="col-auto pb-4">
             <h2>Working <span>process</span></h2>
@@ -21,16 +19,15 @@ export default {
     </div>
 
     <div class="row justify-content-center flex-nowrap mb-5">
-        <div class="col-10 ms_bg ">
-
+        <div class="col-10 ms_bg">
             <div class="overlay"></div>
 
             <div class="row text-center">
                 <div class="col-3">
                     <div class="text">
                         <i class="fa-regular fa-lightbulb"></i>
-                        <h5>First Theres </h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <h5>First Theres</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
 
@@ -38,23 +35,23 @@ export default {
                     <div class="text">
                         <i class="fa-regular fa-comment"></i>
                         <h5>Then we talk about</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
 
                 <div class="col-3">
                     <i class="fa-solid fa-cloud"></i>
                     <div class="text">
-                        <h5>And we think about </h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <h5>And we think about</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
 
                 <div class="col-3">
                     <i class="fa-solid fa-pen"></i>
                     <div class="text">
-                        <h5>So we draw along </h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <h5>So we draw along</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
@@ -63,8 +60,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/general.scss';
-@use '../styles/variabiles' as *;
+@use "../styles/general.scss";
+@use "../styles/variabiles" as *;
 
 h2 {
     font-size: 70px;
@@ -72,7 +69,7 @@ h2 {
 
     span {
         font-weight: 800;
-        font-family: 'italic';
+        font-family: "italic";
     }
 }
 
@@ -81,7 +78,7 @@ h2 {
 }
 
 .ms_bg {
-    background-image: url('../../public/svg/svg-3.svg');
+    background-image: url("../../public/svg/svg-3.svg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
