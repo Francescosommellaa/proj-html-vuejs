@@ -22,7 +22,7 @@ export default {
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium .
             </p>
-            <buttom class="ms_btn">read more</buttom>
+            <button class="ms_btn">read more</button>
         </div>
     </div>
 </template>
@@ -37,6 +37,10 @@ h3 {
     span {
         font-family: italic;
         font-weight: 900;
+    }
+
+    p {
+        margin-bottom: 1em;
     }
 }
 </style>

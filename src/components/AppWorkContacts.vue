@@ -27,7 +27,7 @@ export default {
                     </div>
                 </div>
                 <div class="col-1 mx-auto">
-                    <button class="text-center ms_btn_secondary border-0">contact</button>
+                    <button class="text-center ms_btn_secondary">contact</button>
                 </div>
             </div>
         </div>
