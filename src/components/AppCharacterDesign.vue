@@ -63,4 +63,7 @@ export default {
             font-family: italic;
             font-weight: 900;
         }
-    }</style>
+    }
+}
+    
+    </style>

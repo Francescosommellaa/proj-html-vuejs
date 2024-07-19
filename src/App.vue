@@ -59,5 +59,6 @@ export default {
   top: 0;
   width: 100vh;
   height: 100vh;
+  
 }
 </style>

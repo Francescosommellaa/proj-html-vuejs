@@ -2,17 +2,25 @@
 import { store } from "../store";
 export default {
     name: "AppSideNav",
+    classe:"",
     data() {
         return {
             store,
         };
     },
+    methods:{    
+        scroll(){
+            classe="ds_ok"
+    }
+
+   }
+
 };
 </script>
 
 <template>
-    <a href="#anchor"> 
-        <div class="arrow">
+    <a  href="#anchor"> 
+        <div @scroll="scroll" class="arrow" :class="classe">
             <i class="fa-solid fa-arrow-up"></i>
         </div>
     </a>
@@ -33,6 +41,11 @@ export default {
     right: 20px;
     color: white;
     z-index: 500;
-    // bottom: 10px;
+    display: none;
+    
+}
+
+.ds_ok{
+    display: block;
 }
 </style>
