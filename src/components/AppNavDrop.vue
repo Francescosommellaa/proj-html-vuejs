@@ -5,6 +5,8 @@ export default {
     data() {
         return {
             pages: [{
+                state: false,
+                color: 'fc3',
                 page: 'home',
                 section: [
                     {
@@ -50,6 +52,8 @@ export default {
                 ]
             },
             {
+                state: false,
+                color: 'fc2',
                 page: 'Pages',
                 section: [
                     {
@@ -91,6 +95,8 @@ export default {
 
             },
             {
+                state: false,
+                color: 'fc1',
                 page: 'Portfolio',
                 area: [{
                     page: 'types',
@@ -238,6 +244,8 @@ export default {
                 }]
             },
             {
+                state: false,
+                color: 'fc5',
                 page: 'Blog',
                 section: [
                     {
@@ -287,6 +295,8 @@ export default {
                 ]
             },
             {
+                state: false,
+                color: 'fc4',
                 page: 'Shop',
                 section: [
                     {
@@ -344,6 +354,8 @@ export default {
                 ]
             },
             {
+                state: false,
+                color: 'fc6',
                 page: 'Elements',
                 area: [{
                     page: 'Classic',

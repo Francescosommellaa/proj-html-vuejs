@@ -5,6 +5,7 @@
   --underline-fc3-bg: #f0817b !important;
   --underline-fc4-bg: #f8d12d !important;
   --underline-fc5-bg: #80465f !important;
+  --underline-fc6-bg: #ef2853 !important;
 }
 
 .fc1 {
@@ -23,6 +24,9 @@
 }
 .fc5 {
   --underline-bg: var(--underline-fc5-bg);
+}
+.fc6 {
+  --underline-fc6-bg: #ef2853 !important;
 }
 
 .ms-underline {
