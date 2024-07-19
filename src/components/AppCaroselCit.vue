@@ -3,6 +3,7 @@ export default {
     name: "AppCaroselCit",
 };
 </script>
+
 <template>
     <div class="row back">
         <div class="col-10 mx-auto vertical">

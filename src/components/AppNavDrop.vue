@@ -262,6 +262,7 @@ export default {
                     },
                     {
                         title: 'Post Tipe',
+                        state: false,
                         section: [{
                             title: 'Standard Post',
                             name: '#'
@@ -309,6 +310,7 @@ export default {
                     },
                     {
                         title: 'Shop Layouts',
+                        state: false,
                         section: [{
                             title: 'Three Columns',
                             name: '#'
@@ -337,6 +339,7 @@ export default {
                     },
                     {
                         title: 'Shop Pages',
+                        state: false,
                         section: [{
                             title: 'My Account',
                             name: '#'
@@ -510,7 +513,42 @@ export default {
 
 </script>
 
-<template></template>
+<template>
+    <div class="d-flex align-items-center">
+        <div v-for="page in pages" :class="'ms-listlink' + ' ' + 'ms-underline' + ' ' + page.color">{{ page.page }}
+            <div>
+                <ul>
+                    <li> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div>
+        <ul class="d-flex align-items-center">
+            <li class="ms-listlink ms-underline fc3" @click="store.cardOffertdirection = false">
+                <router-link :to="{ name: 'Home' }" class="nav-link">
+                    Home
+                </router-link>
+            </li>
+            <li class="ms-listlink ms-underline fc1" @click="store.cardOffertdirection = false">
+                <router-link :to="{ name: 'OurTeam' }" class="nav-link">
+                    OurTeam
+                </router-link>
+            </li>
+            <li class="ms-listlink ms-underline fc2" @click="store.cardOffertdirection = true">
+                <router-link :to="{ name: 'WhatWeOffer' }" class="nav-link">
+                    WhatWeOffer
+                </router-link>
+            </li>
+        </ul>
+    </div>
+</template>
 
 
 <style lang="scss" scoped></style>

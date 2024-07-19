@@ -26,7 +26,7 @@
   --underline-bg: var(--underline-fc5-bg);
 }
 .fc6 {
-  --underline-fc6-bg: #ef2853 !important;
+  --underline-fc6-bg: var(--underline-fc6-bg);
 }
 
 .ms-underline {
