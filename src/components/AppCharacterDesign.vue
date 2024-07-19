@@ -39,8 +39,37 @@ h3 {
         font-weight: 900;
     }
 
-    p {
-        margin-bottom: 1em;
+    .ms_btn {
+    text-transform: uppercase;
+    border: 2px solid $border4;
+    width: fit-content;
+    padding: 10px 20px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.8s ease;
+    // .ms_btn {
+    //     text-transform: uppercase;
+    //     border: 2px solid $border4;
+    //     width: fit-content;
+    //     padding: 10px 20px;
+    //     font-weight: 800;
+    //     cursor: pointer;
+    //     transition: all 0.8s ease;
+
+    //     &:hover {
+    //         box-shadow: 0 0 0 5vw $border4 inset;
+    //         color: white;
+    //     }
+     }
+
+    h3 {
+        font-size: 3rem;
+
+        span {
+            font-family: italic;
+            font-weight: 900;
+        }
     }
 }
+    
 </style>
