@@ -29,10 +29,8 @@ export default {
     },
     methods: {
         increment(index) {
-            const targetPercent = this.areaWorks[index].percent;
-            this.areaWorks[index].incris = 0;
             const interval = setInterval(() => {
-                if (this.areaWorks[index].incris < targetPercent) {
+                if (this.areaWorks[index].incris < this.areaWorks[index].percent) {
                     this.areaWorks[index].incris++;
                 } else {
                     clearInterval(interval);
