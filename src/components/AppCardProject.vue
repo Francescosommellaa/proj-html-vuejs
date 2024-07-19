@@ -18,7 +18,7 @@ export default {
             <div class="text">
                 <a href="#">
                     <h2>{{ item.title }}</h2>
-                    <em class="ms-underline fc1">{{ item.tip }}</em>
+                    <em>{{ item.tip }}</em>
                 </a>
             </div>
         </div>

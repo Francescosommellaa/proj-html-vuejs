@@ -17,7 +17,7 @@ export default {
             <img :src="item.pic" alt="illustration" />
             <div class="text">
                 <h4>{{ item.name }}</h4>
-                <em class="ms-underline fc1">{{ item.role }}</em>
+                <em :class="'ms-underline' + ' ' + item.color">{{ item.role }}</em>
             </div>
         </div>
     </div>
