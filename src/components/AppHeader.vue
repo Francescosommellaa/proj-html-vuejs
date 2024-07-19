@@ -1,11 +1,16 @@
 <script>
 import AppSideBar from "./AppSideBar.vue";
-
+import { store } from "../store";
 export default {
   name: "AppHeader",
   components: {
     AppSideBar,
   },
+  data() {
+    return {
+      store
+    }
+  }
 };
 </script>
 
@@ -17,17 +22,17 @@ export default {
     <div class="d-flex align-items-center">
       <div>
         <ul class="d-flex align-items-center">
-          <li class="ms-listlink ms-underline fc3">
+          <li class="ms-listlink ms-underline fc3" @click="store.cardOffertdirection = false">
             <router-link :to="{ name: 'Home' }" class="nav-link">
               Home
             </router-link>
           </li>
-          <li class="ms-listlink ms-underline fc1">
+          <li class="ms-listlink ms-underline fc1" @click="store.cardOffertdirection = false">
             <router-link :to="{ name: 'OurTeam' }" class="nav-link">
               OurTeam
             </router-link>
           </li>
-          <li class="ms-listlink ms-underline fc2">
+          <li class="ms-listlink ms-underline fc2" @click="store.cardOffertdirection = true">
             <router-link :to="{ name: 'WhatWeOffer' }" class="nav-link">
               WhatWeOffer
             </router-link>

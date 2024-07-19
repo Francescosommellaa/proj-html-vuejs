@@ -1,0 +1,56 @@
+/* UNDERLINE */
+:root {
+  --underline-fc1-bg: #badac9 !important;
+  --underline-fc2-bg: #eb6950 !important;
+  --underline-fc3-bg: #f0817b !important;
+  --underline-fc4-bg: #f8d12d !important;
+  --underline-fc5-bg: #80465f !important;
+  --underline-fc6-bg: #ef2853 !important;
+}
+
+.fc1 {
+  --underline-bg: var(--underline-fc1-bg);
+}
+
+.fc2 {
+  --underline-bg: var(--underline-fc2-bg);
+}
+
+.fc3 {
+  --underline-bg: var(--underline-fc3-bg);
+}
+.fc4 {
+  --underline-bg: var(--underline-fc4-bg);
+}
+.fc5 {
+  --underline-bg: var(--underline-fc5-bg);
+}
+.fc6 {
+  --underline-fc6-bg: #ef2853 !important;
+}
+
+.ms-underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+.ms-underline:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 5px;
+  height: 8px;
+  transition-property: left, right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  background-color: var(--underline-bg);
+}
+
+.ms-underline:hover:after,
+.ms-underline:focus:after,
+.ms-underline:active:after {
+  right: 0;
+}

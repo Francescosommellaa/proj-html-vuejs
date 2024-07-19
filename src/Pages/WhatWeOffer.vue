@@ -1,5 +1,5 @@
 <script>
-import AppCardOffer from "../components/AppCardOffer.vue";
+import AppCardOffert from "../components/AppCardOffert.vue";
 import AppProgres from "../components/AppProgres.vue";
 import AppTabs from "../components/AppTabs.vue";
 
@@ -8,7 +8,7 @@ export default {
     components: {
         AppTabs,
         AppProgres,
-        AppCardOffer,
+        AppCardOffert,
     },
 };
 </script>
@@ -50,25 +50,25 @@ export default {
         </div>
     </div>
 
-    <div class="row align-items-center justify-content-center">
-        <div class="col-10">
-            <AppCardOffer />
-        </div>
-    </div>
-
     <!-- sezione newsletter -->
-
     <div class="row align-items-center justify-content-center">
         <div class="col-10">
             <div class="row title align-items-center justify-content-center">
                 <div class="col-6">
                     <h4>Subscribe to our <strong>newsletter</strong></h4>
-                    <form action="#">
+                    <form class="d-flex" action="#">
                         <input type="email" name="mail" id="mail" placeholder="Your E-mail" />
-                        <div class="ms_btn">send</div>
+                        <input type="submit" class="ms_btn_secondary ms_btn_newsletter" />
                     </form>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- sezione CardOffer-->
+    <div class="row align-items-center justify-content-center">
+        <div class="col-10">
+            <AppCardOffert />
         </div>
     </div>
 </template>
@@ -123,16 +123,7 @@ input:focus {
     outline: none;
 }
 
-.ms_btn {
-    background-color: $backgroud-color8;
-    width: calc(30% - 30px);
-    min-width: 100px;
-    padding: 10px 30px;
-    align-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: inline-block;
+.ms_btn_newsletter {
     margin-left: 30px;
 }
 </style>

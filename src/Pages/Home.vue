@@ -1,5 +1,5 @@
 <script>
-import AppCardOffer from "../components/AppCardOffer.vue";
+import AppCardOffert from "../components/AppCardOffert.vue";
 import AppCardProject from "../components/AppCardProject.vue";
 import AppCarosel from "../components/AppCarosel.vue";
 import AppWorkContacts from "../components/AppWorkContacts.vue";
@@ -11,7 +11,7 @@ export default {
         AppCarosel,
         AppWorkingProcess,
         AppWorkContacts,
-        AppCardOffer,
+        AppCardOffert,
         AppCardProject,
     },
 };
@@ -24,7 +24,7 @@ export default {
     <AppWorkContacts />
     <div class="row my-5 align-items-center justify-content-center">
         <div class="col-8">
-            <AppCardOffer />
+            <AppCardOffert />
         </div>
     </div>
 </template>

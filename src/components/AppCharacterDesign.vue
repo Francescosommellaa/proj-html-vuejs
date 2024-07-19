@@ -22,7 +22,7 @@ export default {
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium .
             </p>
-            <buttom class="ms_btn">read more</buttom>
+            <button class="ms_btn">read more</button>
         </div>
     </div>
 </template>
@@ -31,7 +31,13 @@ export default {
 @use "../styles/general.scss";
 @use "../styles/variabiles" as *;
 
+h3 {
+    font-size: 3rem;
 
+    span {
+        font-family: italic;
+        font-weight: 900;
+    }
 
 .ms_btn {
     text-transform: uppercase;
