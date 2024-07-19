@@ -39,7 +39,7 @@ h3 {
         font-weight: 900;
     }
 
-.ms_btn {
+    .ms_btn {
     text-transform: uppercase;
     border: 2px solid $border4;
     width: fit-content;
@@ -60,7 +60,7 @@ h3 {
     //         box-shadow: 0 0 0 5vw $border4 inset;
     //         color: white;
     //     }
-    // }
+     }
 
     h3 {
         font-size: 3rem;
@@ -72,4 +72,4 @@ h3 {
     }
 }
     
-    </style>
+</style>
