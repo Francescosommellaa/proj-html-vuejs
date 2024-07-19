@@ -1,5 +1,5 @@
 <script>
-import AppCardOffer from "../components/AppCardOffer.vue";
+import AppCardOffert from "../components/AppCardOffert.vue";
 import AppProgres from "../components/AppProgres.vue";
 import AppTabs from "../components/AppTabs.vue";
 
@@ -8,7 +8,7 @@ export default {
     components: {
         AppTabs,
         AppProgres,
-        AppCardOffer,
+        AppCardOffert,
     },
 };
 </script>
@@ -68,7 +68,7 @@ export default {
     <!-- sezione CardOffer-->
     <div class="row align-items-center justify-content-center">
         <div class="col-10">
-            <AppCardOffer />
+            <AppCardOffert />
         </div>
     </div>
 </template>

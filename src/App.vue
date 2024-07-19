@@ -6,7 +6,7 @@ import AppCarosel from "./components/AppCarosel.vue";
 import AppWorkContacts from "./components/AppWorkContacts.vue";
 import { store } from "./store";
 import AppProgres from "./components/AppProgres.vue";
-import AppCardOffer from "./components/AppCardOffer.vue";
+import AppCardOffer from "./components/AppCardOffert.vue";
 import AppSideBar from "./components/AppSideBar.vue";
 import AppSideNav from "./components/AppSideNav.vue";
 
@@ -33,7 +33,7 @@ export default {
 
 <template>
   <div class="container-fluid">
-  
+
     <div class="position">
       <AppSideNav />
     </div>

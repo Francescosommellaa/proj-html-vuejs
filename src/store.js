@@ -1,6 +1,7 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+  cardOffertdirection: true,
   team: [
     {
       pic: "public/team-img-1-1.jpg",
