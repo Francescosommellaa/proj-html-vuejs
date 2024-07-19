@@ -12,6 +12,7 @@ import AppSideNav from "./components/AppSideNav.vue";
 import AppNavDrop from "./components/AppNavDrop.vue";
 
 
+
 export default {
   name: "App",
   components: {
@@ -35,6 +36,7 @@ export default {
 </script>
 
 <template>
+
   <div class="container-fluid">
     <div class="position">
       <AppSideNav />
@@ -61,6 +63,6 @@ export default {
   top: 0;
   width: 100vh;
   height: 100vh;
-  
+
 }
 </style>
