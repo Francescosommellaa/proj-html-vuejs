@@ -64,7 +64,7 @@ export default {
 .ms_btnside{
     position: fixed;
     top: 15%;
-    right: 20px;
+    right: 0;
     width: 40px;
     height: 100px;
     z-index: 500;
@@ -80,7 +80,7 @@ export default {
         }
     }
     .shop{
-        background-image: rgb(232, 216, 216);
+        background-color: rgb(255, 255, 255);
         padding: 10px;
         height: 45px;
         margin-top: 10px;
