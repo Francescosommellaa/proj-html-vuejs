@@ -8,12 +8,9 @@ export default {
             store,
         };
     },
-    methods:{    
-        scroll(){
-            classe="ds_ok"
-    }
+  
 
-   }
+   
 
 };
 </script>
@@ -32,7 +29,7 @@ export default {
     </a>
 
     <a  href="#anchor"> 
-        <div @scroll="scroll" class="arrow" :class="classe">
+        <div class="arrow">
             <i class="fa-solid fa-arrow-up"></i>
         </div>
     </a>
