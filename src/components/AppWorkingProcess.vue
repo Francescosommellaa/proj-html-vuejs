@@ -1,13 +1,8 @@
 <script>
-import { store } from "../store";
+
 
 export default {
     name: "AppWorkingProcess",
-    data() {
-        return {
-            store,
-        };
-    },
 };
 </script>
 
@@ -17,11 +12,9 @@ export default {
             <h2>Working <span>process</span></h2>
         </div>
     </div>
-
     <div class="row justify-content-center flex-nowrap mb-5">
         <div class="col-10 ms_bg">
             <div class="overlay"></div>
-
             <div class="row text-center">
                 <div class="col-3">
                     <div class="text">
@@ -30,7 +23,6 @@ export default {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-
                 <div class="col-3">
                     <div class="text">
                         <i class="fa-regular fa-comment"></i>
@@ -38,7 +30,6 @@ export default {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-
                 <div class="col-3">
                     <i class="fa-solid fa-cloud"></i>
                     <div class="text">
@@ -46,7 +37,6 @@ export default {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-
                 <div class="col-3">
                     <i class="fa-solid fa-pen"></i>
                     <div class="text">

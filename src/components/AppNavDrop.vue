@@ -1,8 +1,11 @@
 <script>
+import { store } from '../store';
+
 export default {
     name: "AppNavDrop",
     data() {
         return {
+            store,
             pages: [
                 {
                     state: false,
@@ -19,7 +22,7 @@ export default {
                         { title: "Portfolio Carousel", name: "#" },
                         { title: "Landing", name: "#" },
                         { title: "Main Home", name: "#" },
-                    ]
+                    ],
                 },
                 {
                     state: false,
@@ -35,7 +38,7 @@ export default {
                         { title: "Contact Us", name: "#" },
                         { title: "Coming Soon", name: "#" },
                         { title: "404 Error Page", name: "NotFound" },
-                    ]
+                    ],
                 },
                 {
                     state: false,
@@ -97,9 +100,9 @@ export default {
                                 { title: "Big Gallery", name: "#" },
                                 { title: "Small Gallery", name: "#" },
                                 { title: "Masonry", name: "#" },
-                            ]
-                        }
-                    ]
+                            ],
+                        },
+                    ],
                 },
                 {
                     state: false,
@@ -120,9 +123,9 @@ export default {
                                 { title: "Video Post", name: "#" },
                                 { title: "Link Post", name: "#" },
                                 { title: "Quote Post", name: "#" },
-                            ]
-                        }
-                    ]
+                            ],
+                        },
+                    ],
                 },
                 {
                     state: false,
@@ -150,9 +153,9 @@ export default {
                                 { title: "My Account", name: "#" },
                                 { title: "Cart", name: "#" },
                                 { title: "Checkout", name: "#" },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     state: false,
@@ -218,57 +221,69 @@ export default {
                         },
                     ],
                 },
-            ]
-        }
-    }
+            ],
+        };
+    },
 };
-
 </script>
 
 <template>
     <div class="d-flex align-items-center">
-        <div class="dropdown" v-for="page in pages">
-            <button class="dropbtn text-uppercase"> {{ page.pageTitle }}</button>
-            <div class="dropdown-content ">
-                <div v-if="page.sectionArea" class="d-flex">
+        <div class="dropdown drop-container" v-for="page in pages" @mouseover="page.state = true"
+            @mouseout="page.state = false">
+            <button class="dropbtn text-uppercase" :class="page.state ? `ms-underline ${page.color}` : ''">
+                {{ page.pageTitle }}
+            </button>
+            <div v-show="page.state == true" class="dropdown-content text-nowrap"
+                :class="page.sectionArea ? 'dropdown-content-area' : 'dropdown-content'">
+                <div v-if="page.sectionArea" class="d-flex p-0">
                     <div v-for="area in page.sectionArea">
-                        <h4>{{ area.title }}</h4>
+                        <h4 class="text-center text-uppercase">{{ area.title }}</h4>
                         <ul>
                             <li v-for="item in area.sectionItems">
-                                <a :href="item.name">{{ item.title }}</a>
+                                <a :href="item.name" :class="page.state ? `ms-underline ${page.color}` : ''">{{
+                                    item.title }}
+                                </a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
                 <ul v-else>
                     <li v-for="section in page.sectionItems">
-                        <a v-if="section.name == '#'" :href="section.name">{{ section.title }}</a>
-                        <div class="dropdown-sub" v-else-if="section.subItems"><button
-                                class="dropbtn text-uppercase color">
-                                {{ section.title }} </button>
-                            <div class="dropdown-content-sub ">
+                        <div v-if="section.name == '#'" class="">
+                            <a :href="section.name" :class="page.state ? `ms-underline ${page.color}` : ''">{{
+                                section.title }}</a>
+                        </div>
+
+                        <div v-else-if="section.subItems" class="dropdown subitem"
+                            @mouseover="section.sectionstate = true" @mouseout="section.sectionstate = false">
+                            <div>
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <button class="dropbtn color" :class="page.state ? `ms-underline ${page.color}` : ''">
+                                    {{ section.title }}
+                                </button>
+                            </div>
+
+                            <div v-show="section.sectionstate == true" class="dropdown-content-sub p-0">
                                 <ul>
                                     <li v-for="subitem in section.subItems">
-                                        <a :href="subitem.name">{{ subitem.title }}</a>
+                                        <a :href="subitem.name"
+                                            :class="page.state ? `ms-underline ${page.color}` : ''">{{ subitem.title
+                                            }}</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-
-                        <router-link v-else :to="{ name: section.name }" class="nav-link">
-                            {{ section.title }}
+                        <router-link v-else :to="{ name: section.name }" class="nav-link"
+                            :class="page.state ? `ms-underline ${page.color}` : ''">
+                            <span class="m-0 p-0" @click="store.cardOffertdirection ? false : true">{{ section.title
+                                }}</span>
                         </router-link>
                     </li>
                 </ul>
-
             </div>
-
-
-
         </div>
     </div>
-
 </template>
 
 <style lang="scss">
@@ -276,16 +291,16 @@ export default {
 @use "../styles/variabiles" as *;
 
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
+    background-color: transparent;
+    color: black;
+    /* padding: 10px; */
     font-size: 16px;
     border: none;
     cursor: pointer;
-}
 
-.color {
-    background-color: red;
+    &:hover .dropbtn {
+        text-decoration: var(--underline-bg);
+    }
 }
 
 .dropdown {
@@ -299,20 +314,29 @@ export default {
 }
 
 .dropdown-content {
-    display: none;
+    /*  display: none; */
     position: absolute;
-    background-color: #f9f9f9;
+    right: -150%;
+    background-color: $backgroud-color6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content-area {
+    position: absolute;
+    right: 0;
+    background-color: $backgroud-color6;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content-sub {
-    display: none;
     position: absolute;
     right: 100%;
     top: 0;
-    background-color: #f9f9f9;
+    background-color: $backgroud-color6;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -320,35 +344,28 @@ export default {
 
 .dropdown-content-sub a {
     color: black;
-    padding: 12px 16px;
+    padding: 10px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content-sub a:hover {
-    background-color: #f1f1f1
-}
-
-.dropdown:hover .dropdown-content-sub {
-    display: block;
+    /*     background-color: $backgroud-color6; */
 }
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 10px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1
+    /*    background-color: $backgroud-color6; */
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+.drop-container *:not(i) {
+    font-weight: lighter !important;
+    font-size: small !important;
 }
 </style>

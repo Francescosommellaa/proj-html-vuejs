@@ -93,7 +93,8 @@ h3 {
     font-weight: 500;
 
     span {
-        font-family: italic;
+        font-family: "Playfair Display",
+            serif;
         font-weight: 900;
     }
 }
@@ -104,7 +105,8 @@ h4 {
     text-align: center;
 
     span {
-        font-family: italic;
+        font-family: "Playfair Display",
+            serif;
         font-weight: 900;
     }
 }

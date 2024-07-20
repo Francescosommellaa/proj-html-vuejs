@@ -1,12 +1,8 @@
 <script>
-import { store } from "../store";
+
 export default {
     name: "AppSideBar",
-    data() {
-        return {
-            store,
-        };
-    },
+
 };
 </script>
 

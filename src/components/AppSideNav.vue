@@ -1,17 +1,7 @@
 <script>
-import { store } from "../store";
 export default {
     name: "AppSideNav",
-    classe:"",
-    data() {
-        return {
-            store,
-        };
-    },
-  
-
-   
-
+    classe: "",
 };
 </script>
 
@@ -19,16 +9,16 @@ export default {
     <a href="#">
         <div class="ms_btnside">
             <div class="round">
-                <img src="../../public/svg/svg-4.svg" alt="round image">
+                <img src="../../public/svg/svg-4.svg" alt="round image" />
             </div>
 
             <div class="shop">
-                <img src="../../public/svg/svg-6.svg" alt="shop image">
+                <img src="../../public/svg/svg-6.svg" alt="shop image" />
             </div>
         </div>
     </a>
 
-    <a  href="#anchor"> 
+    <a href="#anchor">
         <div class="arrow">
             <i class="fa-solid fa-arrow-up"></i>
         </div>
@@ -50,42 +40,38 @@ export default {
     right: 20px;
     color: white;
     z-index: 500;
-    
-    
 }
 
-.ds_ok{
+.ds_ok {
     display: block;
 }
 
-.ms_btnside{
+.ms_btnside {
     position: fixed;
     top: 15%;
     right: 0;
     width: 40px;
     height: 100px;
     z-index: 500;
-    
-    
-    .round{
+
+    .round {
         background-color: red;
         padding: 10px;
         height: 45px;
         box-shadow: 2px 2px grey;
-        img{
+
+        img {
             color: rgb(255, 253, 253);
         }
     }
-    .shop{
+
+    .shop {
         background-color: rgb(255, 255, 255);
         padding: 10px;
         height: 45px;
         margin-top: 10px;
         border: 1px solid grey;
         box-shadow: 2px 2px grey;
-
-
-    } 
+    }
 }
-
 </style>

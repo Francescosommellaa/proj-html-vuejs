@@ -1,26 +1,29 @@
 <script>
 import AppSideBar from "./AppSideBar.vue";
 import { store } from "../store";
+import AppNavDrop from "./AppNavDrop.vue";
+
 export default {
   name: "AppHeader",
   components: {
     AppSideBar,
+    AppNavDrop,
   },
   data() {
     return {
-      store
-    }
-  }
+      store,
+    };
+  },
 };
 </script>
 
 <template>
   <nav class="navbar">
     <router-link :to="{ name: 'Home' }" class="nav-link">
-      <img id="anchor" class="logo-header" src="../../public/logo-sidearea-1-1.png" alt="Logo Marèe">
+      <img id="anchor" class="logo-header" src="../../public/logo-sidearea-1-1.png" alt="Logo Marèe" />
     </router-link>
     <div class="d-flex align-items-center">
-      <div>
+      <!-- <div>
         <ul class="d-flex align-items-center">
           <li class="ms-listlink ms-underline fc3" @click="store.cardOffertdirection = false">
             <router-link :to="{ name: 'Home' }" class="nav-link">
@@ -38,7 +41,8 @@ export default {
             </router-link>
           </li>
         </ul>
-      </div>
+      </div> -->
+      <AppNavDrop />
       <img class="menu-header" src="../../public/svg/svg-1.svg" alt="Logo Marèe" type="button"
         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" />
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">

@@ -3,26 +3,26 @@ export default {
     name: "AppTabs",
     data() {
         return {
-            activestate: 'idAnimation',
-            tabsArea: [{
-                id: 'idAnimation',
-                title: 'Animation',
-                text: 'Hinc assum pro ea. Meis verear an vel, ex quando legere scriptorem has, mea vide vidisse an.Eius eirmod vel in, quo simul salutatus incorrupte ex, nisl nonumes democritum per te.Ex mei illud illum verter.'
-            },
-            {
-                id: 'idDesing',
-                title: 'Desing',
-                text: ' Paris is the capital of France. Integre appareat cu mea, te mel ferripercipitur efficiendi, in ius phaedrum invenire expetendis.Eius eirmod vel in, quo simul salutatus incorrupte ex, nisl nonumesdemocritum per te.Ex mei illud illum laudem, quem bonorum ius ne.His an omnes propriae fabellas, an duo aeterno expetenda explicari, ea vix propriae deseruisse.Inani expetendis ut cum.'
-            },
-            {
-                id: 'idLettering',
-                title: 'Lettering',
-                text: ' Te sale iusto fabellas sed, eu sea tollit suscipiantur. Obliqueomnesque ne eum, id putent malorum admodum vel, vix no tantas admodum nominavi.Eius eirmod vel in, quo simul salutatus incorrupte ex, nislnonumes democritum per te.Ex mei illud illum laudem, quem bonorum iusne.His an omnes propriae fabellas, an duo aeterno expetend.'
-            }
-            ]
+            activestate: "idAnimation",
+            tabsArea: [
+                {
+                    id: "idAnimation",
+                    title: "Animation",
+                    text: "Hinc assum pro ea. Meis verear an vel, ex quando legere scriptorem has, mea vide vidisse an.Eius eirmod vel in, quo simul salutatus incorrupte ex, nisl nonumes democritum per te.Ex mei illud illum verter.",
+                },
+                {
+                    id: "idDesing",
+                    title: "Desing",
+                    text: " Paris is the capital of France. Integre appareat cu mea, te mel ferripercipitur efficiendi, in ius phaedrum invenire expetendis.Eius eirmod vel in, quo simul salutatus incorrupte ex, nisl nonumesdemocritum per te.Ex mei illud illum laudem, quem bonorum ius ne.His an omnes propriae fabellas, an duo aeterno expetenda explicari, ea vix propriae deseruisse.Inani expetendis ut cum.",
+                },
+                {
+                    id: "idLettering",
+                    title: "Lettering",
+                    text: " Te sale iusto fabellas sed, eu sea tollit suscipiantur. Obliqueomnesque ne eum, id putent malorum admodum vel, vix no tantas admodum nominavi.Eius eirmod vel in, quo simul salutatus incorrupte ex, nislnonumes democritum per te.Ex mei illud illum laudem, quem bonorum iusne.His an omnes propriae fabellas, an duo aeterno expetend.",
+                },
+            ],
         };
     },
-
 };
 </script>
 
@@ -36,12 +36,11 @@ export default {
                         {{ tab.title }}
                     </button>
                 </div>
-
             </div>
         </div>
         <div class="col-10">
             <div v-for="tab in tabsArea" class="w3-container description"
-                :class='tab.id == activestate ? "d-block" : "d-none"'>
+                :class="tab.id == activestate ? 'd-block' : 'd-none'">
                 <p class="text-left">
                     {{ tab.text }}
                 </p>

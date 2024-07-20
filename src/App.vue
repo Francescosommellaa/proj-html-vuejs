@@ -9,10 +9,6 @@ import AppProgres from "./components/AppProgres.vue";
 import AppCardOffer from "./components/AppCardOffert.vue";
 import AppSideBar from "./components/AppSideBar.vue";
 import AppSideNav from "./components/AppSideNav.vue";
-import AppNavDrop from "./components/AppNavDrop.vue";
-
-
-
 
 export default {
   name: "App",
@@ -26,7 +22,6 @@ export default {
     AppFooter,
     AppSideBar,
     AppSideNav,
-    AppNavDrop
   },
   data() {
     return {
@@ -37,9 +32,7 @@ export default {
 </script>
 
 <template>
-
   <div class="container-fluid">
-    <!--  <AppNavDrop /> -->
     <AppSideNav />
     <AppHeader />
     <router-view></router-view>

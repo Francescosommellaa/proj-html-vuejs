@@ -1,12 +1,7 @@
 <script>
-import { store } from "../store";
+
 export default {
     name: "AppWorkContacts",
-    data() {
-        return {
-            store,
-        };
-    },
 };
 </script>
 

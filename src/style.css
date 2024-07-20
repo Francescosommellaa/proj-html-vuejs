@@ -26,9 +26,13 @@
   --underline-bg: var(--underline-fc5-bg);
 }
 .fc6 {
-  --underline-fc6-bg: var(--underline-fc6-bg);
+  --underline-bg: var(--underline-fc6-bg);
 }
 
+.undeline {
+  z-index: 10px;
+  text-decoration: underline var(--underline-bg);
+}
 .ms-underline {
   display: inline;
   position: relative;
