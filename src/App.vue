@@ -13,6 +13,7 @@ import AppNavDrop from "./components/AppNavDrop.vue";
 
 
 
+
 export default {
   name: "App",
   components: {
@@ -38,13 +39,10 @@ export default {
 <template>
 
   <div class="container-fluid">
-    <div class="position">
-      <AppSideNav />
-    </div>
-
+    <!--  <AppNavDrop /> -->
+    <AppSideNav />
     <AppHeader />
     <router-view></router-view>
-
     <AppFooter />
   </div>
 </template>
@@ -52,17 +50,4 @@ export default {
 <style lang="scss">
 @use "./styles/general.scss";
 @use "./styles/variabiles" as *;
-// :root{
-
-// cursor: url('../public/icons8-cursore-67.png'),auto;
-// --cursor-size: 2px;
-// }
-
-.position {
-  position: absolute;
-  top: 0;
-  width: 100vh;
-  height: 100vh;
-
-}
 </style>
