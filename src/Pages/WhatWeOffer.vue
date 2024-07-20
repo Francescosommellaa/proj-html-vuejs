@@ -2,6 +2,7 @@
 import AppCardOffert from "../components/AppCardOffert.vue";
 import AppProgres from "../components/AppProgres.vue";
 import AppTabs from "../components/AppTabs.vue";
+import { store } from "../store";
 
 export default {
     name: "WhatWeOffer",
@@ -10,6 +11,9 @@ export default {
         AppProgres,
         AppCardOffert,
     },
+    mounted() {
+        store.cardOffertdirection = false;
+    }
 };
 </script>
 

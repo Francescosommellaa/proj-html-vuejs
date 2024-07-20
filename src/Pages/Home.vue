@@ -4,6 +4,7 @@ import AppCardProject from "../components/AppCardProject.vue";
 import AppCarosel from "../components/AppCarosel.vue";
 import AppWorkContacts from "../components/AppWorkContacts.vue";
 import AppWorkingProcess from "../components/AppWorkingProcess.vue";
+import { store } from "../store";
 
 export default {
     name: "Home",
@@ -14,6 +15,9 @@ export default {
         AppCardOffert,
         AppCardProject,
     },
+    mounted() {
+        store.cardOffertdirection = true;
+    }
 };
 </script>
 

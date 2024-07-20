@@ -1,5 +1,5 @@
 <script>
-import { store } from '../store';
+import { store } from "../store";
 
 export default {
     name: "AppNavDrop",
@@ -276,8 +276,7 @@ export default {
                         </div>
                         <router-link v-else :to="{ name: section.name }" class="nav-link"
                             :class="page.state ? `ms-underline ${page.color}` : ''">
-                            <span class="m-0 p-0" @click="store.cardOffertdirection ? false : true">{{ section.title
-                                }}</span>
+                            {{ section.title }}
                         </router-link>
                     </li>
                 </ul>
