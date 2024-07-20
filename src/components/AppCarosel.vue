@@ -127,6 +127,12 @@ export default {
 @use "../styles/general.scss";
 @use "../styles/variabiles" as *;
 
+img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
 #Carosel {
     height: 100%;
 }
