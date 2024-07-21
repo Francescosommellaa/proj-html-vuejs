@@ -49,16 +49,16 @@ export default {
                                 <img class="card-img-top rounded-0 hover-area" :src="card.pic" alt="Card image cap" />
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">
+                                <h5 class="card-title hover-area">
                                     {{ card.text }}
                                 </h5>
-                                <italic class="card-text ms-underline fc1">{{
+                                <italic class="card-text ms-underline fc1 hover-area">{{
                                     card.by
                                 }}</italic>
                             </div>
                             <div class="box">
-                                <div class="text-center box-style hover-area">{{ card.day }}</div>
-                                <div class="flag hover-area">{{ card.data }}</div>
+                                <div class="text-center box-style ">{{ card.day }}</div>
+                                <div class="flag ">{{ card.data }}</div>
                             </div>
                         </div>
                     </a>

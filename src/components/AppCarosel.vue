@@ -49,7 +49,7 @@ export default {
                             <p class="slidetext subtitle-end">
                                 esse et fugit minus libero in error? Maxime libero odio
                             </p>
-                            <button type="button" class="slidetext slider-btn ms_btn">
+                            <button type="button" class="slidetext slider-btn ms_btn hover-area">
                                 Read More
                             </button>
                         </div>
@@ -72,7 +72,7 @@ export default {
                             <p class="slidetext subtitle-end">
                                 esse et fugit minus libero in error? Maxime libero odio
                             </p>
-                            <button type="button" class="slidetext slider-btn ms_btn">
+                            <button type="button" class="slidetext slider-btn ms_btn hover-area">
                                 Read More
                             </button>
                         </div>
@@ -95,7 +95,7 @@ export default {
                             <p class="slidetext subtitle-end">
                                 esse et fugit minus libero in error? Maxime libero odio
                             </p>
-                            <button type="button" class="ms_btn slidetext slider-btn">
+                            <button type="button" class="ms_btn slidetext slider-btn hover-area">
                                 Read More
                             </button>
                         </div>
@@ -105,17 +105,17 @@ export default {
                     </div>
                 </div>
             </div>
-            <button @click="reloadAnimations" class="carousel-control-prev hover-area" type="button"
-                data-bs-target="#Carosel" data-bs-slide="prev">
+            <button @click="reloadAnimations" class="carousel-control-prev" type="button" data-bs-target="#Carosel"
+                data-bs-slide="prev">
                 <div class="ms-prev-icon">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon hover-arrow-area" aria-hidden="true"></span>
                 </div>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button @click="reloadAnimations" class="carousel-control-next" type="button" data-bs-target="#Carosel"
                 data-bs-slide="next">
                 <div class="ms-prev-icon">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon hover-arrow-area" aria-hidden="true"></span>
                 </div>
                 <span class="visually-hidden">Next</span>
             </button>

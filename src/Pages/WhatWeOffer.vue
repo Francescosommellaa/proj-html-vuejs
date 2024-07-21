@@ -11,8 +11,14 @@ export default {
         AppProgres,
         AppCardOffert,
     },
+    data() {
+        return {
+            store
+        }
+    },
     mounted() {
         store.cardOffertdirection = false;
+        store.cursor()
     }
 };
 </script>

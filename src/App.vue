@@ -29,30 +29,30 @@ export default {
     };
   },
   methods: {
-    cursor() {
-      // Rimuovi 'DOMContentLoaded' in quanto non necessario in un componente Vue montato
-      const cursor = document.getElementById('puntatore-container');
-      const cursorDot = cursor.querySelector('.puntatore');
-
-      // Aggiorna la posizione del cursore
-      document.addEventListener('mousemove', (e) => {
-        cursor.style.left = `${e.clientX - 6}px`;
-        cursor.style.top = `${e.clientY - 3}px`;
-      });
-
-      // Aggiungi classi in base all'hover sugli elementi desiderati
-      document.querySelectorAll('.hover-area').forEach(el => {
-        el.addEventListener('mouseenter', () => {
-          cursor.classList.add('general-hover');
-        });
-        el.addEventListener('mouseleave', () => {
-          cursor.classList.remove('general-hover');
-        });
-      });
-    }
+    /*     cursor() {
+          // Rimuovi 'DOMContentLoaded' in quanto non necessario in un componente Vue montato
+          const cursor = document.getElementById('puntatore-container');
+          const cursorDot = cursor.querySelector('.puntatore');
+    
+          // Aggiorna la posizione del cursore
+          document.addEventListener('mousemove', (e) => {
+            cursor.style.left = `${e.clientX - 6}px`;
+            cursor.style.top = `${e.clientY - 3}px`;
+          });
+    
+          // Aggiungi classi in base all'hover sugli elementi desiderati
+          document.querySelectorAll('.hover-area').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+              cursor.classList.add('general-hover');
+            });
+            el.addEventListener('mouseleave', () => {
+              cursor.classList.remove('general-hover');
+            });
+          });
+        } */
   },
   mounted() {
-    this.cursor();
+    store.cursor();
   }
 };
 </script>
@@ -101,12 +101,47 @@ body,
   right: 0;
   border-radius: 50%;
   outline: transparent solid 1px;
-  background-color: #c0e1cf;
+  background-color: $backgroud-color8;
   transition: .3s
 }
 
 #puntatore-container.general-hover .puntatore {
   transform: scale(1.5);
-  background-color: #f5d8ca
+  background-color: $text-colors2
+}
+
+#puntatore-container.big-hover .puntatore {
+  transform: scale(2.5);
+  background-color: $text-colors2
+}
+
+#puntatore-container.big-hover {
+  mix-blend-mode: darken
+}
+
+#puntatore-container.arrow-hover .puntatore {
+  transform: scale(3);
+  background-color: $backgroud-color8
+}
+
+#puntatore-container.arrow-hover {
+  mix-blend-mode: color;
+}
+
+#puntatore-container.footer-hover .puntatore {
+  background-color: $text-colors1
+}
+
+#puntatore-container.footer-text-hover .puntatore {
+  transform: scale(1.5);
+}
+
+#puntatore-container.footer-icon-hover .puntatore {
+  transform: scale(3);
+  background-color: $text-colors2
+}
+
+#puntatore-container.footer-icon-hover {
+  mix-blend-mode: color
 }
 </style>

@@ -5,30 +5,30 @@ export default {
 </script>
 
 <template>
-  <div class="row ms-bg">
+  <div class="row ms-bg hover-footer-area">
     <div class="col-3">
-      <img src="../../public/logo-sidearea-1.png" alt="logo footer" />
+      <img src="../../public/logo-sidearea-1.png" alt="logo footer" class="hover-footer-text-area" />
       <h6>Let's Get Creative</h6>
     </div>
     <div class="col-3">
       <ul class="d-flex flex-column">
-        <li class="ms-listlink ms-underline fc3">maree@qodeinteractive.com</li>
-        <li class="ms-listlink ms-underline fc3">+44645 321 789</li>
+        <li class="ms-listlink ms-underline fc3 hover-footer-text-area">maree@qodeinteractive.com</li>
+        <li class="ms-listlink ms-underline fc3 hover-footer-text-area">+44645 321 789</li>
       </ul>
     </div>
     <div class="col-3">
       <ul class="d-flex flex-column">
-        <li class="ms-listlink ms-underline fc3">Avenue d'Audeghem 10</li>
-        <li class="ms-listlink ms-underline fc3">1040 Brusless, Belgium</li>
+        <li class="ms-listlink ms-underline fc3 hover-footer-text-area">Avenue d'Audeghem 10</li>
+        <li class="ms-listlink ms-underline fc3 hover-footer-text-area">1040 Brusless, Belgium</li>
       </ul>
     </div>
     <div class="col-3 ms-icon-container">
       <span>Stay in tuch with us</span>
       <div class="d-flex justify-content-between ms-icon">
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter hover-footer-icon-area"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p hover-footer-icon-area"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f hover-footer-icon-area"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in hover-footer-icon-area"></i></a>
       </div>
     </div>
   </div>
