@@ -47,6 +47,10 @@ export default {
 
 .back {
     background-color: $backgroud-color10;
+    background-image: url(../../public/cit-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     height: 300px;
 
     .vertical {
