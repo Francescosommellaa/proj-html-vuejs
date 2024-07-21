@@ -20,7 +20,7 @@ export default {
 <template>
   <nav class="navbar">
     <router-link :to="{ name: 'Home' }" class="nav-link">
-      <img id="anchor" class="logo-header" src="../../public/logo-sidearea-1-1.png" alt="Logo Marèe" />
+      <img id="anchor" class="logo-header hover-area" src="../../public/logo-sidearea-1-1.png" alt="Logo Marèe" />
     </router-link>
     <div class="d-flex align-items-center">
       <!-- <div>

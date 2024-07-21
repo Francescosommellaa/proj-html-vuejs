@@ -32,7 +32,7 @@ export default {
             <div class="row border-bottom d-flex justify-content-between">
                 <div v-for="tab in tabsArea" :id="tab.id" class="col-4 text-start"
                     :class="tab.id == activestate ? 'activ-color' : ''">
-                    <button class="border-0 bg-transparent text-uppercase" @click="activestate = tab.id">
+                    <button class="border-0 bg-transparent text-uppercase hover-area" @click="activestate = tab.id">
                         {{ tab.title }}
                     </button>
                 </div>

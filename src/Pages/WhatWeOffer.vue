@@ -61,8 +61,8 @@ export default {
                 <div class="col-6">
                     <h4>Subscribe to our <strong>newsletter</strong></h4>
                     <form class="d-flex" action="#">
-                        <input type="email" name="mail" id="mail" placeholder="Your E-mail" />
-                        <input type="submit" class="ms_btn_secondary ms_btn_newsletter" />
+                        <input type="email" class="hover-area" name="mail" id="mail" placeholder="Your E-mail" />
+                        <input type="submit" class="ms_btn_secondary ms_btn_newsletter hover-area" />
                     </form>
                 </div>
             </div>

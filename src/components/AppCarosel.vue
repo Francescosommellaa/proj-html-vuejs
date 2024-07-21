@@ -105,8 +105,8 @@ export default {
                     </div>
                 </div>
             </div>
-            <button @click="reloadAnimations" class="carousel-control-prev" type="button" data-bs-target="#Carosel"
-                data-bs-slide="prev">
+            <button @click="reloadAnimations" class="carousel-control-prev hover-area" type="button"
+                data-bs-target="#Carosel" data-bs-slide="prev">
                 <div class="ms-prev-icon">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </div>

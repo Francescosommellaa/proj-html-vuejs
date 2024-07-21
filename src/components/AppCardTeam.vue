@@ -13,7 +13,7 @@ export default {
 
 <template>
     <div class="container-card d-flex flex-wrap">
-        <div v-for="(item, index) in store.team" :key="index" class="ms-card">
+        <div v-for="(item, index) in store.team" :key="index" class="ms-card hover-area">
             <img :src="item.pic" alt="illustration" />
             <div class="text">
                 <h4>{{ item.name }}</h4>

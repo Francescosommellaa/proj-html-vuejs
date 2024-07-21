@@ -22,7 +22,7 @@ export default {
                     </div>
                 </div>
                 <div class="col-auto text-center">
-                    <button class="text-center ms_btn_secondary">contact</button>
+                    <button class="text-center ms_btn_secondary hover-area">contact</button>
                 </div>
             </div>
         </div>

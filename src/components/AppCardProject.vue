@@ -12,8 +12,8 @@ export default {
 </script>
 
 <template>
-    <div class="container-card d-flex flex-wrap">
-        <div v-for="(item, index) in store.illustration" :key="index" class="ms-card">
+    <div class="container-card d-flex flex-wrap ">
+        <div v-for="(item, index) in store.illustration" :key="index" class="ms-card hover-area">
             <img :src="item.pic" alt="illustration" />
             <div class="text">
                 <a href="#">

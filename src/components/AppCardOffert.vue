@@ -46,7 +46,7 @@ export default {
                     <a :href="card.ancor">
                         <div class="card border border-0 position-relative">
                             <div class="ms-container-img">
-                                <img class="card-img-top rounded-0" :src="card.pic" alt="Card image cap" />
+                                <img class="card-img-top rounded-0 hover-area" :src="card.pic" alt="Card image cap" />
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
@@ -54,11 +54,11 @@ export default {
                                 </h5>
                                 <italic class="card-text ms-underline fc1">{{
                                     card.by
-                                    }}</italic>
+                                }}</italic>
                             </div>
                             <div class="box">
-                                <div class="text-center box-style">{{ card.day }}</div>
-                                <div class="flag">{{ card.data }}</div>
+                                <div class="text-center box-style hover-area">{{ card.day }}</div>
+                                <div class="flag hover-area">{{ card.data }}</div>
                             </div>
                         </div>
                     </a>
