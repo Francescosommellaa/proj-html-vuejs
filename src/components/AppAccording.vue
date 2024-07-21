@@ -59,7 +59,9 @@ export default {
 }
 
 .rotation {
+
     animation: roll 0.5s linear forwards;
+    transform: translate(-50% -50%);
 
     @keyframes roll {
         0% {
