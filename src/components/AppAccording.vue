@@ -39,11 +39,13 @@ export default {
                     : (according.value = false)
                 " class="d-flex justify-content-between">
                 <h6>{{ according.title }}</h6>
-                <i class="fa-solid fa-plus" :style="according.value == true ? 'transform : rotate(45deg)' : ''"></i>
+                <i class="fa-solid fa-plus" :class="according.value == true ? 'rotation' : ''"></i>
             </div>
-            <div v-show="according.value != false">
-                <p>{{ according.text }}</p>
-            </div>
+            <Transition name="bounce">
+                <div v-show="according.value != false">
+                    <p>{{ according.text }}</p>
+                </div>
+            </Transition>
         </div>
     </div>
 </template>
@@ -54,5 +56,55 @@ export default {
 
 .justify-content-between {
     border-bottom: 3px solid $backgroud-color9;
+}
+
+.rotation {
+    animation: roll 0.5s linear forwards;
+
+    @keyframes roll {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(27deg);
+        }
+
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+
+}
+
+
+
+
+.bounce-enter-active {
+    animation: bounce-in 1s;
+}
+
+.bounce-leave-active {
+    animation: bounce-in 0.3s reverse;
+}
+
+@keyframes bounce-in {
+    0% {
+
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
 }
 </style>
