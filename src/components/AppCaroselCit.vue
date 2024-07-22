@@ -46,12 +46,25 @@ export default {
 @use "../styles/variabiles" as *;
 
 .back {
-    background-color: $backgroud-color10;
+    background-color: $backgroud-color6;
     background-image: url(../../public/cit-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     height: 300px;
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: $backgroud-color10;
+
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            height: 20px;
+        }
+    }
 
     .vertical {
         align-content: center;
