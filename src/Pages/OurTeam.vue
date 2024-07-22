@@ -3,6 +3,7 @@ import AppAccording from "../components/AppAccording.vue";
 import AppCardTeam from "../components/AppCardTeam.vue";
 import AppCaroselCit from "../components/AppCaroselCit.vue";
 import AppCharacterDesign from "../components/AppCharacterDesign.vue";
+import { store } from "../store";
 
 export default {
     name: "OurTeam",
@@ -11,7 +12,16 @@ export default {
         AppAccording,
         AppCardTeam,
         AppCharacterDesign,
+
     },
+    data() {
+        return {
+            store
+        }
+    },
+    mounted() {
+        store.cursor()
+    }
 };
 </script>
 

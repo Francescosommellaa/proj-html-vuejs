@@ -231,18 +231,19 @@ export default {
     <div class="d-flex align-items-center">
         <div class="dropdown drop-container" v-for="page in pages" @mouseover="page.state = true"
             @mouseout="page.state = false">
-            <button class="dropbtn text-uppercase" :class="page.state ? `ms-underline ${page.color}` : ''">
+            <button class="dropbtn text-uppercase hover-area" :class="page.state ? `ms-underline ${page.color}` : ''">
                 {{ page.pageTitle }}
             </button>
             <div v-show="page.state == true" class="dropdown-content text-nowrap"
                 :class="page.sectionArea ? 'dropdown-content-area' : 'dropdown-content'">
                 <div v-if="page.sectionArea" class="d-flex p-0">
                     <div v-for="area in page.sectionArea">
-                        <h4 class="text-center text-uppercase">{{ area.title }}</h4>
+                        <h4 class="text-center text-uppercase hover-area">{{ area.title }}</h4>
                         <ul>
                             <li v-for="item in area.sectionItems">
-                                <a :href="item.name" :class="page.state ? `ms-underline ${page.color}` : ''">{{
-                                    item.title }}
+                                <a class="hover-area" :href="item.name"
+                                    :class="page.state ? `ms-underline ${page.color}` : ''">{{
+                                        item.title }}
                                 </a>
                             </li>
                         </ul>
@@ -251,15 +252,17 @@ export default {
                 <ul v-else>
                     <li v-for="section in page.sectionItems">
                         <div v-if="section.name == '#'" class="">
-                            <a :href="section.name" :class="page.state ? `ms-underline ${page.color}` : ''">{{
-                                section.title }}</a>
+                            <a class="hover-area" :href="section.name"
+                                :class="page.state ? `ms-underline ${page.color}` : ''">{{
+                                    section.title }}</a>
                         </div>
 
-                        <div v-else-if="section.subItems" class="dropdown subitem"
+                        <div v-else-if="section.subItems" class="dropdown subitem hover-area"
                             @mouseover="section.sectionstate = true" @mouseout="section.sectionstate = false">
                             <div>
                                 <i class="fa-solid fa-chevron-left"></i>
-                                <button class="dropbtn color" :class="page.state ? `ms-underline ${page.color}` : ''">
+                                <button class="dropbtn color hover-area"
+                                    :class="page.state ? `ms-underline ${page.color}` : ''">
                                     {{ section.title }}
                                 </button>
                             </div>
@@ -267,14 +270,14 @@ export default {
                             <div v-show="section.sectionstate == true" class="dropdown-content-sub p-0">
                                 <ul>
                                     <li v-for="subitem in section.subItems">
-                                        <a :href="subitem.name"
+                                        <a class="hover-area" :href="subitem.name"
                                             :class="page.state ? `ms-underline ${page.color}` : ''">{{ subitem.title
                                             }}</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <router-link v-else :to="{ name: section.name }" class="nav-link"
+                        <router-link v-else :to="{ name: section.name }" class="nav-link hover-area"
                             :class="page.state ? `ms-underline ${page.color}` : ''">
                             {{ section.title }}
                         </router-link>

@@ -84,4 +84,70 @@ export const store = reactive({
       tip: "Illustration",
     },
   ],
+  cursor() {
+    // Rimuovi 'DOMContentLoaded' in quanto non necessario in un componente Vue montato
+    const cursor = document.getElementById("puntatore-container");
+    const cursorDot = cursor.querySelector(".puntatore");
+
+    // Aggiorna la posizione del cursore
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = `${e.clientX - 6}px`;
+      cursor.style.top = `${e.clientY - 3}px`;
+    });
+
+    // Aggiungi classi in base all'hover sugli elementi desiderati
+    document.querySelectorAll(".hover-area").forEach((el) => {
+      el.addEventListener("mouseenter", () => {
+        cursor.classList.add("general-hover");
+      });
+      el.addEventListener("mouseleave", () => {
+        cursor.classList.remove("general-hover");
+      });
+    });
+
+    document.querySelectorAll(".hover-big-area").forEach((el) => {
+      el.addEventListener("mouseenter", () => {
+        cursor.classList.add("big-hover");
+      });
+      el.addEventListener("mouseleave", () => {
+        cursor.classList.remove("big-hover");
+      });
+    });
+    document.querySelectorAll(".hover-arrow-area").forEach((el) => {
+      el.addEventListener("mouseenter", () => {
+        cursor.classList.add("arrow-hover");
+      });
+      el.addEventListener("mouseleave", () => {
+        cursor.classList.remove("arrow-hover");
+      });
+    });
+
+    document.querySelectorAll(".hover-footer-area").forEach((el) => {
+      el.addEventListener("mouseenter", () => {
+        cursor.classList.add("footer-hover");
+      });
+      el.addEventListener("mouseleave", () => {
+        cursor.classList.remove("footer-hover");
+      });
+    });
+    document.querySelectorAll(".hover-footer-text-area").forEach((el) => {
+      el.addEventListener("mouseenter", () => {
+        cursor.classList.add("footer-text-hover");
+      });
+      el.addEventListener("mouseleave", () => {
+        cursor.classList.remove("footer-text-hover");
+      });
+    });
+    document.querySelectorAll(".hover-footer-icon-area").forEach((el) => {
+      el.addEventListener("mouseenter", () => {
+        cursor.classList.add("footer-icon-hover");
+        el.style.color = "white";
+      });
+
+      el.addEventListener("mouseleave", () => {
+        cursor.classList.remove("footer-icon-hover");
+        el.style.color = "currentcolor";
+      });
+    });
+  },
 });

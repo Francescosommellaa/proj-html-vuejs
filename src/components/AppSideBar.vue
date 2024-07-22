@@ -8,21 +8,21 @@ export default {
 
 <template>
     <div id="logo">
-        <a href="#"><img src="../../public/logo-sidearea-1-1.png" alt="logo marèe" /></a>
+        <a href="#" class="hover-area"><img src="../../public/logo-sidearea-1-1.png" alt="logo marèe" /></a>
     </div>
     <p>
         This is Marée, a colorful new portfolio for presenting your work. If you’re
         a modern illustrator or a designer, we made Marée for you.
     </p>
     <div class="ms_cont_social">
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter hover-big-area"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p hover-big-area"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook hover-big-area"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in hover-big-area"></i></a>
     </div>
 
     <form action="#">
-        <input type="text" placeholder="Enter your Keyword..." />
+        <input type="text" class="hover-area" placeholder="Enter your Keyword..." />
     </form>
 </template>
 

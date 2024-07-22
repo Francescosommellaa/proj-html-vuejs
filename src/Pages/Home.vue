@@ -17,6 +17,7 @@ export default {
     },
     mounted() {
         store.cardOffertdirection = true;
+        store.cursor();
     }
 };
 </script>

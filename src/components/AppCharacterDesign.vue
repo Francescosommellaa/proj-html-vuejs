@@ -22,7 +22,7 @@ export default {
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium .
             </p>
-            <button class="ms_btn">read more</button>
+            <button class="ms_btn hover-area">read more</button>
         </div>
     </div>
 </template>
