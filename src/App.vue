@@ -29,27 +29,7 @@ export default {
     };
   },
   methods: {
-    /*     cursor() {
-          // Rimuovi 'DOMContentLoaded' in quanto non necessario in un componente Vue montato
-          const cursor = document.getElementById('puntatore-container');
-          const cursorDot = cursor.querySelector('.puntatore');
-    
-          // Aggiorna la posizione del cursore
-          document.addEventListener('mousemove', (e) => {
-            cursor.style.left = `${e.clientX - 6}px`;
-            cursor.style.top = `${e.clientY - 3}px`;
-          });
-    
-          // Aggiungi classi in base all'hover sugli elementi desiderati
-          document.querySelectorAll('.hover-area').forEach(el => {
-            el.addEventListener('mouseenter', () => {
-              cursor.classList.add('general-hover');
-            });
-            el.addEventListener('mouseleave', () => {
-              cursor.classList.remove('general-hover');
-            });
-          });
-        } */
+
   },
   mounted() {
     store.cursor();
